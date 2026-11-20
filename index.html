@@ -1,0 +1,3591 @@
+<!DOCTYPE html>
+<html lang="su">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASAS 1 Basa Sunda TA 2026/2027 — Kelas XII SMAN 1 Sukaraja</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            sunda: {
+              dark: '#1b4337',
+              primary: '#25594a',
+              light: '#357a66',
+              gold: '#d97706',
+              cream: '#faf8f5',
+              sand: '#f1ede4'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #faf8f5;
+      color: #1e293b;
+      user-select: none;
+    }
+    .batik-header {
+      background-color: #25594a;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1.2px, transparent 1.2px),
+                        radial-gradient(rgba(217, 119, 6, 0.16) 1.2px, #25594a 1.2px);
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1ede4; }
+    ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+    .drag-over-zone {
+      border-color: #25594a !important;
+      background-color: rgba(37, 89, 74, 0.09) !important;
+      transform: scale(1.01);
+    }
+
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes fadeSlideUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-float { animation: floatSlow 3.6s ease-in-out infinite; }
+    .animate-fade-up { animation: fadeSlideUp 0.65s ease-out forwards; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+  <!-- ========================================================= -->
+  <!-- SPLASH SCREEN BATIK & AKSARA SUNDA SMAN 1 SUKARAJA        -->
+  <!-- ========================================================= -->
+  <div id="splashScreen" class="fixed inset-0 z-50 batik-header text-white flex items-center justify-center p-4 sm:p-6 overflow-y-auto transition-opacity duration-300">
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+      <div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-amber-400/15 blur-3xl"></div>
+      <div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-emerald-300/15 blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-2xl w-full bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-10 text-center shadow-2xl animate-fade-up my-auto">
+      <!-- Institutional Pill -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-extrabold uppercase tracking-wider mb-5">
+        <span>ᮞᮙᮔ᮪ ᮱ ᮞᮥᮊᮛᮏ</span>
+        <span>•</span>
+        <span>Kabupatén Sukabumi</span>
+      </div>
+
+      <!-- Aksara Sunda Emblem -->
+      <div class="mx-auto w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-amber-500/20 border-2 border-amber-300/60 shadow-xl flex flex-col items-center justify-center mb-5 animate-float">
+        <span class="text-3xl sm:text-4xl font-extrabold text-amber-300 leading-none">ᮞᮥ</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-100 mt-1.5">Basa Sunda</span>
+      </div>
+
+      <!-- School & Exam Title -->
+      <div class="space-y-1.5">
+        <p class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] text-amber-300">
+          SMA Negeri 1 Sukaraja
+        </p>
+        <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+          ASESMEN SUMATIF AKHIR SEMESTER (ASAS) 1
+        </h1>
+        <h2 class="text-lg sm:text-2xl font-bold text-emerald-200">
+          Mata Pelajaran Basa Sunda — Kelas XII
+        </h2>
+        <div class="pt-1">
+          <span class="inline-block px-4 py-1 rounded-xl bg-black/25 border border-white/15 text-xs sm:text-sm font-bold text-amber-200">
+            Tahun Ajaran 2026 / 2027
+          </span>
+        </div>
+      </div>
+
+      <!-- Materi Badges -->
+      <div class="mt-6 pt-5 border-t border-white/15 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-emerald-100">
+        <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/10">📜 Carita Wayang</span>
+        <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/10">📰 Téks Pedaran &amp; Artikel</span>
+        <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/10">🏛️ Tradisi Sunda</span>
+        <span class="px-3 py-1 rounded-lg bg-white/10 border border-white/10">🎮 60 Soal CBT Interaktif</span>
+      </div>
+
+      <!-- Primary Action Buttons -->
+      <div class="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <button type="button" onclick="enterApplication('student')"
+          class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 active:scale-[0.98] text-slate-950 font-extrabold text-sm sm:text-base shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer">
+          <span>🚀 Lebet ka Ruang Siswa</span>
+        </button>
+        <button type="button" id="btnSplashTeacher" onclick="enterApplication('teacher')"
+          class="hidden w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-white/15 hover:bg-white/25 border border-white/25 text-white font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 cursor-pointer">
+          <span>📊 Portal Rékap Guru</span>
+        </button>
+      </div>
+
+      <p class="mt-5 text-[11px] text-emerald-200/85">
+        Wilujeng nyanghareupan ASAS Semester 1 • Mugia dipaparin kalancaran &amp; hasil nu nyugemakeun.
+      </p>
+
+      <!-- Subtle Proktor/Guru Mode Switcher in Footer of Splash -->
+      <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-center">
+        <button type="button" id="btnTogglePreviewModeSplash" onclick="requestTeacherModeUnlock()"
+          class="text-[11px] text-emerald-200/70 hover:text-amber-200 transition underline-offset-4 hover:underline cursor-pointer">
+          🔐 Mode Proktor / Guru
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- TOP NAVIGATION BAR                                        -->
+  <!-- ========================================================= -->
+  <header class="batik-header text-white shadow-md sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <button type="button" onclick="showSplashScreen()" title="Témbongkeun Splash Screen"
+          class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-400/50 flex items-center justify-center text-amber-300 font-extrabold text-lg shadow-inner shrink-0 cursor-pointer hover:scale-105 transition">
+          ᮞᮥ
+        </button>
+        <div>
+          <h1 class="font-bold text-sm sm:text-base leading-tight tracking-tight">ASAS 1 BASA SUNDA — KELAS XII</h1>
+          <p class="text-[11px] sm:text-xs text-emerald-200/90">SMAN 1 Sukaraja • Tahun Ajaran 2026/2027</p>
+        </div>
+      </div>
+
+      <!-- Mode Switcher & Settings -->
+      <div class="flex items-center gap-2">
+        <nav class="flex bg-black/25 p-1 rounded-xl border border-white/10">
+          <button type="button" onclick="switchView('student')" id="navStudent"
+            class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white text-sunda-primary shadow-sm cursor-pointer">
+            Ruang Siswa
+          </button>
+          <button type="button" onclick="switchView('teacher')" id="navTeacher"
+            class="hidden px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-emerald-100 hover:text-white cursor-pointer">
+            Portal Guru
+          </button>
+        </nav>
+
+        <!-- Quick Teacher Mode Unlock Button when in Student Lock Mode -->
+        <button type="button" id="btnNavProctorLock" onclick="requestTeacherModeUnlock()" title="Buka Mode Guru / Proktor"
+          class="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-emerald-100 transition-colors cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+          </svg>
+        </button>
+
+        <button type="button" id="btnNavSetupGear" onclick="openSetupModal()" title="Pengaturan URL Google Apps Script"
+          class="hidden p-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/15 text-emerald-100 transition-colors relative cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+          <span id="connectionDot" class="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-amber-400 border border-sunda-dark"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- TOAST NOTIFICATION BANNER -->
+  <div id="toastBox" class="fixed bottom-4 right-4 z-50 max-w-sm w-full pointer-events-none flex flex-col gap-2 px-4 sm:px-0"></div>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-6 sm:py-8">
+
+    <!-- ========================================================= -->
+    <!-- VIEW 1: RUANG SISWA (LOBBY / IDENTITAS PESERTA UJIAN)      -->
+    <!-- ========================================================= -->
+    <section id="viewLobby" class="max-w-xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-sm border border-stone-200/80 overflow-hidden">
+        <div class="bg-sunda-sand/70 px-6 py-5 border-b border-stone-200/80">
+          <span class="inline-block px-2.5 py-1 rounded-full text-xs font-bold bg-sunda-primary/10 text-sunda-primary mb-2">
+            Wilujeng Sumping • Ruang Siswa
+          </span>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-slate-800">Identitas Peserta Ujian</h2>
+          <p class="text-sm text-slate-600 mt-1">Mangga eusian data diri kalayan leres sateuacan ngamimitian ujian.</p>
+        </div>
+
+        <div class="p-6 space-y-4">
+          <div id="loginErrorBox" class="hidden p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs sm:text-sm font-semibold"></div>
+
+          <div>
+            <label for="inputNama" class="block text-sm font-semibold text-slate-700 mb-1.5">Nami Lengkep (Nama Lengkap)</label>
+            <input type="text" id="inputNama" maxlength="80" placeholder="Conto: Asep Sunandar"
+              class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:border-sunda-primary focus:ring-2 focus:ring-sunda-primary/20 outline-none transition text-slate-800 font-medium" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="inputKelas" class="block text-sm font-semibold text-slate-700 mb-1.5">Kelas (12 Kelas XII)</label>
+              <select id="inputKelas"
+                class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:border-sunda-primary focus:ring-2 focus:ring-sunda-primary/20 outline-none transition bg-white text-slate-800 font-semibold cursor-pointer">
+                <option value="">-- Pilih Kelas --</option>
+                <option value="12.1-1">12.1-1</option>
+                <option value="12.1-2">12.1-2</option>
+                <option value="12.1-3">12.1-3</option>
+                <option value="12-2-1">12-2-1</option>
+                <option value="12.2-2">12.2-2</option>
+                <option value="12.2-3">12.2-3</option>
+                <option value="12.3-1">12.3-1</option>
+                <option value="12.3-2">12.3-2</option>
+                <option value="12.3-3">12.3-3</option>
+                <option value="12.4-1">12.4-1</option>
+                <option value="12.4-2">12.4-2</option>
+                <option value="12.4-3">12.4-3</option>
+              </select>
+            </div>
+            <div>
+              <label for="inputAbsen" class="block text-sm font-semibold text-slate-700 mb-1.5">Nomer Absén</label>
+              <input type="number" id="inputAbsen" min="1" max="50" placeholder="Conto: 14"
+                class="w-full px-4 py-2.5 rounded-xl border border-stone-300 focus:border-sunda-primary focus:ring-2 focus:ring-sunda-primary/20 outline-none transition text-slate-800 font-medium" />
+            </div>
+          </div>
+
+          <!-- Gerbang Keamanan Token Dinamis (6 Digit TOTP) -->
+          <div class="bg-sunda-sand/90 border-2 border-sunda-primary/30 rounded-2xl p-4 space-y-2.5">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <label for="inputToken" class="text-sm font-extrabold text-sunda-dark flex items-center gap-1.5">
+                <span>🔐</span>
+                <span>Token Ujian (6 Digit ti Guru / Proktor)</span>
+              </label>
+              <span id="studentUtcBadge" class="text-[11px] font-mono font-bold px-2 py-0.5 rounded-md bg-white border border-stone-200 text-slate-600">
+                UTC Sync
+              </span>
+            </div>
+
+            <div class="relative">
+              <input type="text" id="inputToken" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="off"
+                placeholder="• • • • • •"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 6)"
+                onkeydown="if(event.key==='Enter') startExam()"
+                class="w-full px-4 py-3 rounded-xl border-2 border-stone-300 focus:border-sunda-primary focus:ring-2 focus:ring-sunda-primary/20 outline-none transition bg-white text-center font-mono text-2xl font-extrabold tracking-[0.45em] text-sunda-dark placeholder:text-slate-300 placeholder:tracking-[0.3em]" />
+            </div>
+            <p class="text-[11px] text-slate-600 leading-snug">
+              *Kode token 6 angka robah otomatis unggal <strong>60 detik</strong>. Mangga tingali dina layar proyektor atawa grup kelas ti guru.
+            </p>
+          </div>
+
+          <!-- Tata Tertib & Info Anti-Curang -->
+          <div class="bg-amber-50/90 border border-amber-200/80 rounded-xl p-4 text-xs sm:text-sm text-amber-900 space-y-1.5">
+            <div class="font-bold flex items-center gap-1.5 text-amber-800">
+              <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+              Aturan Ujian &amp; Sistem Pangawas Otomatis:
+            </div>
+            <ul class="list-disc list-inside space-y-1 text-amber-900/90 pl-1">
+              <li>Jumlah soal aya <strong>60 soal</strong> (30 Pilihan Ganda kalebet 5 wacana carita wayang, 15 Drag &amp; Drop, 15 Menjodohkan).</li>
+              <li>Tingkat kasulitan soal: <strong>50% Mudah, 30% Sedang, 20% Sulit</strong>.</li>
+              <li>Ulah pindah tab browser atanapi muka aplikasi séjén salami ujian lumangsung (<strong>1x</strong> peringatan, <strong>2x</strong> status <em>Terindikasi Curang</em>).</li>
+              <li>Upami teridentifikasi melakukan kecurangan <strong>3 kali (3x pindah tab/layar)</strong>, ujian <strong>otomatis dihentikan</strong>, tidak bisa melanjutkan ke soal selanjutnya, dan nilai langsung terekam.</li>
+            </ul>
+          </div>
+
+          <button type="button" id="btnStartExam" onclick="startExam()"
+            class="w-full py-3.5 px-6 rounded-xl bg-sunda-primary hover:bg-sunda-dark active:scale-[0.99] text-white font-bold text-base shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer">
+            <span>🚀 Mimitian Ujian Ayeuna</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- VIEW 2: RUANG UJIAN CBT (60 SOAL & NAVIGASI)              -->
+    <!-- ========================================================= -->
+    <section id="viewExam" class="hidden space-y-5">
+      <!-- Top Exam Status Bar -->
+      <div class="bg-white rounded-2xl p-4 shadow-sm border border-stone-200/80 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <div id="examAvatar" class="w-10 h-10 rounded-xl bg-sunda-primary text-white font-extrabold flex items-center justify-center text-sm shadow-2xs">
+            AS
+          </div>
+          <div>
+            <div id="examStudentName" class="font-bold text-slate-800 text-sm sm:text-base">Peserta Ujian</div>
+            <div id="examStudentMeta" class="text-xs text-slate-500">Kelas • Absén</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2.5">
+          <div id="antiCheatBadge" class="px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200">
+            <span class="w-2 h-2 rounded-full bg-current"></span>
+            <span id="antiCheatText">Status: Aman (0/3)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Exam Workspace Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+        <!-- Question Area (8 cols) -->
+        <div class="lg:col-span-8 bg-white rounded-2xl shadow-sm border border-stone-200/80 p-5 sm:p-6 space-y-5">
+          <!-- Question Badges -->
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-stone-100">
+            <div class="flex flex-wrap items-center gap-2">
+              <span id="qNumberBadge" class="px-3 py-1 rounded-lg bg-sunda-primary text-white font-extrabold text-xs">
+                Soal No. 1 / 60
+              </span>
+              <span id="qTypeBadge" class="px-2.5 py-1 rounded-lg bg-amber-100 text-amber-900 font-bold text-xs">
+                Pilihan Ganda
+              </span>
+              <span id="qDiffBadge" class="px-2.5 py-1 rounded-lg font-bold text-xs bg-emerald-100 text-emerald-800">
+                Mudah
+              </span>
+            </div>
+            <span id="qCategoryBadge" class="text-xs font-bold text-slate-500">Materi: Carita Wayang</span>
+          </div>
+
+          <!-- Optional Reading Passage Box (Sempalan Carita Wayang) -->
+          <div id="qPassageBox" class="hidden rounded-2xl bg-amber-50/75 border border-amber-200/90 p-4 sm:p-5 space-y-2 shadow-2xs">
+            <div class="flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-amber-900">
+              <span>📜</span>
+              <span id="qPassageTitle">Sempalan Carita Wayang</span>
+            </div>
+            <blockquote id="qPassageText" class="text-sm sm:text-[15px] text-slate-800 leading-relaxed italic font-medium border-l-4 border-amber-500 pl-3.5 py-0.5">
+              <!-- Populated by JS -->
+            </blockquote>
+          </div>
+
+          <!-- Question Stem -->
+          <div id="qText" class="text-base sm:text-lg font-bold text-slate-800 leading-relaxed">
+            <!-- Populated by JS -->
+          </div>
+
+          <!-- Interactive Answer Options / DragDrop / Matching -->
+          <div id="qInteractiveBody" class="space-y-3">
+            <!-- Populated by JS -->
+          </div>
+
+          <!-- Bottom Navigation Controls -->
+          <div class="pt-4 border-t border-stone-100 flex flex-wrap items-center justify-between gap-3">
+            <button type="button" id="btnPrev" onclick="prevQuestion()"
+              class="px-4 py-2.5 rounded-xl border border-stone-300 hover:bg-stone-50 disabled:opacity-40 disabled:pointer-events-none font-bold text-sm text-slate-700 transition flex items-center gap-1.5 cursor-pointer">
+              ← Sateuacanna
+            </button>
+
+            <button type="button" id="btnNext" onclick="nextQuestion()"
+              class="px-5 py-2.5 rounded-xl bg-sunda-primary hover:bg-sunda-dark text-white font-bold text-sm transition flex items-center gap-1.5 shadow-2xs cursor-pointer">
+              Salajengna →
+            </button>
+
+            <button type="button" id="btnFinish" onclick="openSubmitModal()"
+              class="hidden px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm transition flex items-center gap-1.5 shadow-sm cursor-pointer">
+              ✓ Rengsé &amp; Kumpulkeun
+            </button>
+          </div>
+        </div>
+
+        <!-- Question Grid Sidebar (4 cols) -->
+        <div class="lg:col-span-4 bg-white rounded-2xl shadow-sm border border-stone-200/80 p-5 sticky top-20">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-bold text-slate-800 text-sm">Daptar Nomer Soal</h3>
+            <span class="text-xs font-semibold text-sunda-primary" id="answeredCountText">0 / 60 Kaéusi</span>
+          </div>
+
+          <div id="questionGrid" class="grid grid-cols-6 sm:grid-cols-8 lg:grid-cols-5 gap-1.5 max-h-[300px] overflow-y-auto pr-1 mb-4">
+            <!-- Buttons populated by JS -->
+          </div>
+
+          <div class="space-y-1.5 text-xs text-slate-600 border-t border-stone-100 pt-3 mb-4">
+            <div class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-sunda-primary inline-block"></span> Parantos dijawab</div>
+            <div class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-stone-100 border border-stone-300 inline-block"></span> Teu acan dijawab</div>
+          </div>
+
+          <button type="button" onclick="openSubmitModal()"
+            class="w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-2xs transition cursor-pointer">
+            Kumpulkeun Sadaya Jawaban
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- VIEW 3: HASIL UJIAN & PEMBAHASAN                          -->
+    <!-- ========================================================= -->
+    <section id="viewResult" class="hidden max-w-2xl mx-auto space-y-6">
+      <div class="bg-white rounded-2xl shadow-sm border border-stone-200/80 overflow-hidden text-center">
+        <div class="batik-header text-white px-6 py-7">
+          <div id="resultHeaderIcon" class="w-14 h-14 rounded-2xl bg-white/15 border border-white/25 mx-auto flex items-center justify-center text-2xl mb-3">
+            🎉
+          </div>
+          <h2 id="resultHeaderTitle" class="text-xl sm:text-2xl font-extrabold">Hatur Nuhun!</h2>
+          <p id="resultHeaderSubtitle" class="text-emerald-100 text-sm mt-1">Jawaban ASAS 1 Basa Sunda parantos kacatet kana sistem.</p>
+        </div>
+
+        <div class="p-6 space-y-5">
+          <!-- Auto-Terminate Cheat Banner (Shown if terminated at 3 violations) -->
+          <div id="cheatTerminatedBanner" class="hidden p-4 rounded-xl bg-rose-50 border-2 border-rose-500 text-rose-950 text-left space-y-1.5 shadow-xs">
+            <div class="font-extrabold text-sm text-rose-700 flex items-center gap-1.5">
+              <span>⛔</span>
+              <span>PERINGATAN: UJIAN DIHENTIKAN OTOMATIS (3x KECURANGAN)</span>
+            </div>
+            <p class="text-xs sm:text-sm leading-relaxed">
+              Anda <strong>tidak dapat melanjutkan soal selanjutnya</strong> karena sudah teridentifikasi melakukan kecurangan (keluar dari layar ujian / pindah tab) sebanyak <strong>3 kali</strong>. Nilai akhir dari jawaban yang telah terisi telah otomatis direkam ke sistem.
+            </p>
+          </div>
+
+          <!-- Sync Status Banner -->
+          <div id="syncStatusBox" class="p-3 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+            Data hasil ujian parantos dikirimkeun.
+          </div>
+
+          <!-- Score Card -->
+          <div class="bg-sunda-sand/70 rounded-2xl p-5 border border-stone-200/80">
+            <div class="text-xs uppercase tracking-wider font-bold text-slate-500">Peunteun Akhir (Skor)</div>
+            <div class="text-5xl font-extrabold text-sunda-primary my-1" id="resSkor">0</div>
+            <div class="text-xs font-semibold text-slate-600" id="resBenar">Leres 0 tina 60 soal</div>
+          </div>
+
+          <!-- Detail Receipt -->
+          <div class="text-left text-sm space-y-2.5 border-t border-b border-stone-100 py-4">
+            <div class="flex justify-between">
+              <span class="text-slate-500">Nami Siswa</span>
+              <span class="font-bold text-slate-800" id="resNama">-</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">Kelas / Absén</span>
+              <span class="font-bold text-slate-800" id="resKelasAbsen">-</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">Status Pangawasan</span>
+              <span class="font-bold px-2 py-0.5 rounded text-xs" id="resStatus">-</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500">Waktos Kumpul</span>
+              <span class="font-medium text-slate-700" id="resTime">-</span>
+            </div>
+          </div>
+
+          <!-- Analisis Per Materi -->
+          <div class="text-left">
+            <h3 class="text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2.5">Analisis Pangaweruh Per Materi</h3>
+            <div id="categoryBreakdown" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-2.5 pt-2">
+            <button type="button" onclick="resetToHome()" class="flex-1 py-2.5 px-4 rounded-xl border border-stone-300 hover:bg-stone-50 font-semibold text-sm text-slate-700 transition cursor-pointer">
+              Uih ka Beranda
+            </button>
+            <button type="button" onclick="toggleReviewAnswers()" id="btnToggleReview" class="flex-1 py-2.5 px-4 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-semibold text-sm transition cursor-pointer">
+              Tingali Kunci &amp; Pembahasan
+            </button>
+            <button type="button" id="btnResultTeacher" onclick="switchView('teacher')" class="hidden flex-1 py-2.5 px-4 rounded-xl bg-sunda-primary hover:bg-sunda-dark text-white font-semibold text-sm transition cursor-pointer">
+              Portal Rékap Guru
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pembahasan Kunci Jawaban Section -->
+      <div id="reviewContainer" class="hidden bg-white rounded-2xl shadow-sm border border-stone-200/80 p-6 space-y-4">
+        <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+          <h3 class="text-lg font-extrabold text-slate-800">Kunci Jawaban &amp; Pembahasan</h3>
+          <span class="text-xs font-semibold text-slate-500">Bahan Diajar Mandiri</span>
+        </div>
+        <div id="reviewList" class="space-y-4">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- VIEW 4: PORTAL GURU (TOKEN PROKTOR, REKAP & LIVE MONITOR) -->
+    <!-- ========================================================= -->
+    <section id="viewTeacher" class="hidden space-y-6">
+      
+      <!-- Teacher Password Gate -->
+      <div id="teacherLoginGate" class="max-w-md mx-auto bg-white rounded-2xl shadow-sm border border-stone-200/80 overflow-hidden">
+        <div class="bg-sunda-sand/70 px-6 py-5 border-b border-stone-200/80">
+          <div class="w-12 h-12 rounded-xl bg-sunda-primary text-white flex items-center justify-center mb-3 shadow-2xs">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h2 class="text-xl font-extrabold text-slate-800">Portal Rékap &amp; Proktor Guru</h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">Halaman husus guru pikeun ningali token ujian, live monitor siswa, sarta ngunduh rékap nilai.</p>
+        </div>
+        
+        <div class="p-6 space-y-4">
+          <div id="teacherGateError" class="hidden p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-semibold"></div>
+
+          <div>
+            <label for="teacherPassInput" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Password Guru</label>
+            <div class="relative">
+              <input type="password" id="teacherPassInput" placeholder="Lebetkeun password guru (default: sunda2026)"
+                onkeydown="if(event.key==='Enter') unlockTeacherDashboard()"
+                class="w-full pl-4 pr-11 py-2.5 rounded-xl border border-stone-300 focus:border-sunda-primary focus:ring-2 focus:ring-sunda-primary/20 outline-none text-slate-800 font-medium" />
+              <button type="button" onclick="toggleTeacherPassVisibility()" title="Témbongkeun / Sumputkeun Password"
+                class="absolute inset-y-0 right-0 px-3 text-slate-400 hover:text-slate-700 flex items-center cursor-pointer">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                </svg>
+              </button>
+            </div>
+            <p class="text-[11px] text-slate-500 mt-1.5">
+              *Password default: <code class="bg-stone-100 px-1.5 py-0.5 rounded font-bold">sunda2026</code>
+            </p>
+          </div>
+
+          <button type="button" id="btnUnlockTeacher" onclick="unlockTeacherDashboard()" class="w-full py-3 px-4 rounded-xl bg-sunda-primary hover:bg-sunda-dark text-white font-bold text-sm transition shadow-sm cursor-pointer flex items-center justify-center gap-2">
+            <span>🔓 Buka Portal Rékap &amp; Proktor</span>
+          </button>
+
+          <div class="pt-2 border-t border-stone-100 flex items-center justify-between text-xs text-slate-500">
+            <span id="gateConnectionHint">Status: Penyimpanan Lokal Browser</span>
+            <button type="button" onclick="openSetupModal()" class="text-sunda-primary font-bold hover:underline cursor-pointer">
+              Setél URL Google Sheet →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unlocked Teacher Dashboard -->
+      <div id="teacherDashboard" class="hidden space-y-5">
+        <!-- Top Action Bar -->
+        <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-stone-200/80 flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <h2 class="text-lg sm:text-xl font-extrabold text-slate-800">Portal Guru — ASAS 1 Basa Sunda</h2>
+              <span id="dataSourceBadge" class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800">
+                Penyimpanan Lokal
+              </span>
+            </div>
+            <p class="text-xs text-slate-500 mt-0.5">Kelola Token Ujian, Pantau Live Proktor, sarta Unduh Rékap Nilai 12 Kelas XII.</p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2">
+            <button type="button" onclick="openSetupModal()" class="px-3 py-2 rounded-xl border border-stone-300 hover:bg-stone-50 text-xs font-bold text-slate-700 transition cursor-pointer">
+              ⚙️ URL Google Sheet
+            </button>
+            <button type="button" onclick="loadRecapData()" class="px-3.5 py-2 rounded-xl bg-sunda-primary hover:bg-sunda-dark text-white text-xs font-bold transition flex items-center gap-1.5 shadow-sm cursor-pointer">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+              Muat Ulang
+            </button>
+            <button type="button" onclick="exportToCSV()" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-sm cursor-pointer">
+              <span>📥 Unduh Rékap (CSV)</span>
+            </button>
+            <button type="button" onclick="lockTeacherDashboard()" title="Konci Portal Guru" class="px-3 py-2 rounded-xl border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 text-xs font-bold transition cursor-pointer">
+              🔒 Konci
+            </button>
+          </div>
+        </div>
+
+        <!-- PANEL PROKTOR: TOKEN GERBANG UJIAN DINAMIS (6 DIGIT TOTP - 60 DETIK) -->
+        <div class="bg-gradient-to-br from-sunda-dark via-sunda-primary to-sunda-light text-white rounded-2xl p-5 sm:p-6 shadow-md border border-emerald-700/60">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+            <div class="space-y-1.5 max-w-xl">
+              <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-200 text-[11px] font-extrabold uppercase tracking-wider">
+                <span>🔐 Gerbang Keamanan TOTP • Interval 60 Detik</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-extrabold text-white">Token Akses Ujian Siswa</h3>
+              <p class="text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
+                Témbongkeun kode 6 digit di gigir kana proyektor atanapi bagikeun ka grup kelas. Token otomatis robah unggal <strong>60 detik</strong> dumasar sinkronisasi waktos UTC.
+              </p>
+              <div class="pt-1 flex flex-wrap items-center gap-3 text-[11px] text-emerald-200 font-mono">
+                <span id="teacherUtcClock">UTC: --:--:--</span>
+                <span>•</span>
+                <span id="teacherSyncStatus">Sinkronisasi Waktos: Aktif</span>
+              </div>
+            </div>
+
+            <div class="bg-black/25 backdrop-blur-xs border border-white/15 rounded-2xl p-4 sm:p-5 flex flex-col items-center sm:items-stretch min-w-[270px] sm:min-w-[320px] space-y-3">
+              <div class="flex items-center justify-between gap-3">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-200">Kode Token Ayeuna</span>
+                <span id="tokenCountdownBadge" class="px-2.5 py-0.5 rounded-lg bg-amber-400 text-slate-950 font-mono font-extrabold text-xs">
+                  60d
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between gap-3 bg-white/10 border border-white/20 rounded-xl px-4 py-3">
+                <div id="teacherTokenDisplay" class="font-mono text-4xl sm:text-5xl font-extrabold tracking-[0.22em] text-amber-300 select-all leading-none">
+                  ------
+                </div>
+                <button type="button" onclick="copyCurrentToken()" id="btnCopyToken"
+                  class="px-3.5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 active:scale-95 text-slate-950 font-extrabold text-xs shadow-sm transition flex items-center gap-1.5 shrink-0 cursor-pointer">
+                  <span>📋 Salin Token</span>
+                </button>
+              </div>
+
+              <div class="space-y-1">
+                <div class="w-full h-2.5 rounded-full bg-black/35 overflow-hidden border border-white/10">
+                  <div id="tokenProgressBar" class="h-full bg-amber-400 transition-all duration-300 rounded-full" style="width: 100%;"></div>
+                </div>
+                <div class="flex justify-between text-[11px] text-emerald-200/90 font-medium">
+                  <span>Sisa waktos berlaku token</span>
+                  <span id="tokenCountdownText" class="font-mono font-bold text-amber-200">60 detik deui</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUB-TABS PORTAL GURU: REKAP NILAI VS LIVE MONITOR PROKTOR -->
+        <div class="bg-white rounded-2xl p-2.5 shadow-sm border border-stone-200/80 flex flex-wrap items-center justify-between gap-2">
+          <div class="flex flex-wrap items-center gap-2">
+            <button type="button" onclick="switchTeacherSubTab('rekap')" id="subTabRekap"
+              class="px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-sunda-primary text-white shadow-2xs transition cursor-pointer">
+              📊 Rékap Nilai Siswa
+            </button>
+            <button type="button" onclick="switchTeacherSubTab('monitor')" id="subTabMonitor"
+              class="px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-stone-100 text-slate-700 hover:bg-stone-200 transition flex items-center gap-2 cursor-pointer">
+              <span>📡 Live Monitor Proktor</span>
+              <span id="liveActiveBadge" class="px-2 py-0.5 rounded-full text-[11px] font-extrabold bg-emerald-600 text-white">0 Aktif</span>
+            </button>
+          </div>
+          <span class="text-xs text-slate-500 px-2 hidden sm:inline">12 Kelas Terdaftar: 12.1-1 s/d 12.4-3</span>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- SUB-PANEL A: REKAP NILAI SISWA                          -->
+        <!-- ======================================================= -->
+        <div id="panelTeacherRekap" class="space-y-5">
+          <!-- Data Source Selector Tabs -->
+          <div class="bg-white rounded-2xl p-3 shadow-sm border border-stone-200/80 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex flex-wrap items-center gap-1.5">
+              <button type="button" onclick="setRecapSourceMode('auto')" id="srcTabAuto"
+                class="px-3 py-1.5 rounded-xl text-xs font-bold bg-sunda-primary text-white shadow-2xs transition cursor-pointer">
+                Otomatis (Google Sheet / Lokal)
+              </button>
+              <button type="button" onclick="setRecapSourceMode('sheets')" id="srcTabSheets"
+                class="px-3 py-1.5 rounded-xl text-xs font-bold bg-stone-100 text-slate-700 hover:bg-stone-200 transition cursor-pointer">
+                📊 Google Sheets Saja
+              </button>
+              <button type="button" onclick="setRecapSourceMode('local')" id="srcTabLocal"
+                class="px-3 py-1.5 rounded-xl text-xs font-bold bg-stone-100 text-slate-700 hover:bg-stone-200 transition cursor-pointer">
+                💾 Rékaman Lokal Browser (<span id="localCountBadge">0</span>)
+              </button>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button type="button" id="btnSyncLocalToSheet" onclick="syncLocalRecordsToSheets()"
+                class="hidden px-3 py-1.5 rounded-xl bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 text-xs font-bold transition cursor-pointer">
+                ☁️ Kirim Rékaman Lokal ka Google Sheet
+              </button>
+            </div>
+          </div>
+
+          <!-- Summary Stats Cards -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            <div class="bg-white p-4 rounded-2xl border border-stone-200/80 shadow-sm">
+              <div class="text-xs font-semibold text-slate-500">Total Peserta</div>
+              <div class="text-2xl font-extrabold text-slate-800 mt-1" id="statTotal">0</div>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-stone-200/80 shadow-sm">
+              <div class="text-xs font-semibold text-slate-500">Rata-rata Peunteun</div>
+              <div class="text-2xl font-extrabold text-sunda-primary mt-1" id="statAvg">0</div>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-stone-200/80 shadow-sm">
+              <div class="text-xs font-semibold text-slate-500">Peunteun Pangluhurna</div>
+              <div class="text-2xl font-extrabold text-emerald-600 mt-1" id="statMax">0</div>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-stone-200/80 shadow-sm">
+              <div class="text-xs font-semibold text-slate-500">Terindikasi Curang</div>
+              <div class="text-2xl font-extrabold text-rose-600 mt-1" id="statCheat">0</div>
+            </div>
+          </div>
+
+          <!-- Filter & Table Container -->
+          <div class="bg-white rounded-2xl shadow-sm border border-stone-200/80 overflow-hidden">
+            <div class="p-4 border-b border-stone-100 flex flex-wrap items-center justify-between gap-3">
+              <input type="text" id="searchRecapInput" oninput="renderRecapTable()" placeholder="Pilari nami siswa, kelas, atanapi absén..."
+                class="w-full sm:w-64 px-3.5 py-2 rounded-xl border border-stone-300 text-sm focus:border-sunda-primary outline-none" />
+              
+              <div class="flex flex-wrap items-center gap-2">
+                <select id="filterKelasSelect" onchange="renderRecapTable()" class="px-3.5 py-2 rounded-xl border border-stone-300 text-sm bg-white outline-none font-semibold text-slate-700 cursor-pointer">
+                  <option value="ALL">Sadaya Kelas (12 Kelas)</option>
+                  <option value="12.1-1">12.1-1</option>
+                  <option value="12.1-2">12.1-2</option>
+                  <option value="12.1-3">12.1-3</option>
+                  <option value="12-2-1">12-2-1</option>
+                  <option value="12.2-2">12.2-2</option>
+                  <option value="12.2-3">12.2-3</option>
+                  <option value="12.3-1">12.3-1</option>
+                  <option value="12.3-2">12.3-2</option>
+                  <option value="12.3-3">12.3-3</option>
+                  <option value="12.4-1">12.4-1</option>
+                  <option value="12.4-2">12.4-2</option>
+                  <option value="12.4-3">12.4-3</option>
+                </select>
+
+                <select id="filterStatusSelect" onchange="renderRecapTable()" class="px-3.5 py-2 rounded-xl border border-stone-300 text-sm bg-white outline-none cursor-pointer">
+                  <option value="ALL">Sadaya Status</option>
+                  <option value="Aman">Status: Aman</option>
+                  <option value="Terindikasi Curang">Terindikasi Curang</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-left border-collapse text-sm">
+                <thead>
+                  <tr class="bg-sunda-primary text-white text-xs uppercase tracking-wider">
+                    <th class="py-3 px-4 font-bold">Timestamp</th>
+                    <th class="py-3 px-4 font-bold">Nama Siswa</th>
+                    <th class="py-3 px-4 font-bold">Kelas</th>
+                    <th class="py-3 px-4 font-bold">No. Absen</th>
+                    <th class="py-3 px-4 font-bold">Skor Akhir</th>
+                    <th class="py-3 px-4 font-bold">Jumlah Benar (tina 60)</th>
+                    <th class="py-3 px-4 font-bold">Status Pelanggaran</th>
+                  </tr>
+                </thead>
+                <tbody id="recapTableBody" class="divide-y divide-stone-100">
+                  <!-- Rows populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================= -->
+        <!-- SUB-PANEL B: LIVE MONITOR PROKTOR REAL-TIME             -->
+        <!-- ======================================================= -->
+        <div id="panelTeacherMonitor" class="hidden space-y-4">
+          <div class="bg-white p-4 rounded-2xl border border-stone-200 shadow-2xs flex flex-wrap items-center justify-between gap-3">
+            <div class="flex flex-wrap items-center gap-2">
+              <input type="text" id="filterMonitorSearch" oninput="renderLiveMonitor()" placeholder="Pilari nami siswa..."
+                class="w-full sm:w-56 px-3.5 py-2 rounded-xl border border-stone-300 text-sm outline-none focus:border-sunda-primary" />
+              <select id="filterKelasMonitor" onchange="renderLiveMonitor()" class="px-3 py-2 rounded-xl border border-stone-300 text-sm bg-white font-semibold text-slate-700 cursor-pointer">
+                <option value="ALL">Sadaya Kelas (12 Kelas)</option>
+                <option value="12.1-1">12.1-1</option>
+                <option value="12.1-2">12.1-2</option>
+                <option value="12.1-3">12.1-3</option>
+                <option value="12-2-1">12-2-1</option>
+                <option value="12.2-2">12.2-2</option>
+                <option value="12.2-3">12.2-3</option>
+                <option value="12.3-1">12.3-1</option>
+                <option value="12.3-2">12.3-2</option>
+                <option value="12.3-3">12.3-3</option>
+                <option value="12.4-1">12.4-1</option>
+                <option value="12.4-2">12.4-2</option>
+                <option value="12.4-3">12.4-3</option>
+              </select>
+              <select id="filterMonitorPhase" onchange="renderLiveMonitor()" class="px-3 py-2 rounded-xl border border-stone-300 text-sm bg-white cursor-pointer">
+                <option value="ALL">Sadaya Sési</option>
+                <option value="UJIAN">Nuju Ngerjakeun</option>
+                <option value="SELESAI">Parantos Rengsé</option>
+              </select>
+            </div>
+            <button type="button" onclick="clearLiveMonitorSessions()" class="px-3.5 py-2 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-bold transition cursor-pointer">
+              🗑️ Bersihkeun Log Sési
+            </button>
+          </div>
+
+          <div id="liveMonitorGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- MODAL 1: KONFIRMASI PENGUMPULAN JAWABAN                   -->
+  <!-- ========================================================= -->
+  <div id="submitModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl border border-stone-200">
+      <h3 class="text-lg font-extrabold text-slate-800">Kumpulkeun Jawaban Ujian?</h3>
+      <p class="text-sm text-slate-600 mt-2" id="submitModalSummary">
+        Pastikeun sadaya soal parantos dipariksa. Jawaban anu parantos dikumpulkeun teu tiasa dirobih deui.
+      </p>
+      <div class="mt-6 flex justify-end gap-2.5">
+        <button type="button" onclick="closeSubmitModal()" class="px-4 py-2.5 rounded-xl border border-stone-300 text-sm font-semibold text-slate-700 hover:bg-stone-50 cursor-pointer">
+          Pariksa Deui
+        </button>
+        <button type="button" onclick="submitExam()" class="px-5 py-2.5 rounded-xl bg-sunda-primary hover:bg-sunda-dark text-white text-sm font-bold shadow-sm cursor-pointer">
+          Muhun, Kumpulkeun
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MODAL 2: PERINGATAN ANTI-CHEAT (1x, 2x & 3x LOCKOUT)      -->
+  <!-- ========================================================= -->
+  <div id="cheatModal" class="fixed inset-0 z-50 hidden bg-rose-950/80 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border-2 border-rose-600 text-center">
+      <div class="w-16 h-16 rounded-full bg-rose-100 text-rose-600 mx-auto flex items-center justify-center mb-3">
+        <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
+      </div>
+      <h3 id="cheatModalTitle" class="text-xl font-extrabold text-rose-700">Peringatan Pangawasan!</h3>
+      <p class="text-sm text-slate-700 mt-2.5 leading-relaxed" id="cheatModalText">
+        Anjeun kadeteksi kaluar tina layar ujian atanapi pindah tab browser.
+      </p>
+      <button type="button" id="btnCloseCheatModal" onclick="closeCheatModal()" class="mt-5 w-full py-3 px-4 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-sm shadow-md cursor-pointer">
+        Kahartos, Teraskeun Ujian
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MODAL 3: PENGATURAN URL GOOGLE APPS SCRIPT                -->
+  <!-- ========================================================= -->
+  <div id="setupModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-xl border border-stone-200 space-y-4">
+      <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+        <h3 class="text-lg font-extrabold text-slate-800">Koneksi Google Apps Script</h3>
+        <button type="button" onclick="closeSetupModal()" class="text-slate-400 hover:text-slate-700 font-bold text-xl leading-none cursor-pointer">&times;</button>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+        Tempelkeun <strong>Web App URL</strong> hasil deploy Google Apps Script anjeun di handap. Upami dikosongkeun, aplikasi tetep jalan nganggo <strong>Penyimpanan Lokal</strong> pikeun nyimpen hasil ujian di browser.
+      </p>
+
+      <div>
+        <label for="gasUrlInput" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Web App URL (Apps Script)</label>
+        <input type="url" id="gasUrlInput" placeholder="https://script.google.com/macros/s/.../exec"
+          class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-sunda-primary outline-none text-xs sm:text-sm font-mono text-slate-800" />
+      </div>
+
+      <div id="pingResultBox" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
+
+      <div class="flex flex-wrap items-center justify-between gap-2 pt-2">
+        <button type="button" onclick="clearLocalDemoData()" class="px-3 py-2 rounded-xl text-xs font-semibold text-rose-600 hover:bg-rose-50 transition cursor-pointer">
+          Hapus Rékaman Lokal
+        </button>
+        <div class="flex gap-2">
+          <button type="button" onclick="testGasConnection()" class="px-4 py-2 rounded-xl border border-stone-300 hover:bg-stone-50 text-xs font-bold text-slate-700 transition cursor-pointer">
+            Tes Koneksi
+          </button>
+          <button type="button" onclick="saveGasUrl()" class="px-4 py-2 rounded-xl bg-sunda-primary hover:bg-sunda-dark text-white text-xs font-bold shadow-sm transition cursor-pointer">
+            Simpen URL
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MODAL 4: VERIFIKASI MODE GURU / PROKTOR                   -->
+  <!-- ========================================================= -->
+  <div id="teacherModeModal" class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl border border-stone-200 space-y-4">
+      <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+        <h3 class="text-base font-extrabold text-slate-800 flex items-center gap-2">
+          <span>🔐</span>
+          <span>Aksés Husus Guru / Proktor</span>
+        </h3>
+        <button type="button" onclick="closeTeacherModeModal()" class="text-slate-400 hover:text-slate-700 font-bold text-xl leading-none cursor-pointer">&times;</button>
+      </div>
+      <p class="text-xs text-slate-600 leading-relaxed">
+        Mode standar dikunci kanggo <strong>Ruang Siswa</strong>. Lebetkeun password guru pikeun muka menu <strong>Portal Rékap &amp; Proktor</strong>.
+      </p>
+      <div id="modeModalError" class="hidden p-2.5 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-semibold"></div>
+      <div>
+        <input type="password" id="modeModalPassInput" placeholder="Password guru (default: sunda2026)"
+          onkeydown="if(event.key==='Enter') confirmTeacherModeModal()"
+          class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 focus:border-sunda-primary outline-none text-sm font-medium text-slate-800" />
+      </div>
+      <div class="flex justify-end gap-2 pt-1">
+        <button type="button" onclick="closeTeacherModeModal()" class="px-4 py-2 rounded-xl border border-stone-300 text-xs font-bold text-slate-700 hover:bg-stone-50 cursor-pointer">
+          Batal
+        </button>
+        <button type="button" onclick="confirmTeacherModeModal()" class="px-4 py-2 rounded-xl bg-sunda-primary hover:bg-sunda-dark text-white text-xs font-bold shadow-sm cursor-pointer">
+          Buka Mode Guru
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- JAVASCRIPT APPLICATION LOGIC                              -->
+  <!-- ========================================================= -->
+  <script>
+    // =========================================================================
+    // 0. SPLASH SCREEN & CONSTANTS
+    // =========================================================================
+    const OFFICIAL_CLASSES = [
+      '12.1-1', '12.1-2', '12.1-3',
+      '12-2-1', '12.2-2', '12.2-3',
+      '12.3-1', '12.3-2', '12.3-3',
+      '12.4-1', '12.4-2', '12.4-3'
+    ];
+
+    window.enterApplication = function(targetMode) {
+      const splash = document.getElementById('splashScreen');
+      if (splash) {
+        splash.style.opacity = '0';
+        setTimeout(() => {
+          splash.classList.add('hidden');
+          splash.style.opacity = '1';
+        }, 300);
+      }
+      if (targetMode === 'teacher') {
+        switchView('teacher');
+      } else {
+        switchView('student');
+      }
+    };
+
+    window.showSplashScreen = function() {
+      if (state.examActive) {
+        showToast("Ujian nuju lumangsung, teu tiasa uih ka splash screen.", "warning");
+        return;
+      }
+      const splash = document.getElementById('splashScreen');
+      if (splash) {
+        splash.classList.remove('hidden');
+        splash.style.opacity = '1';
+      }
+    };
+
+    // =========================================================================
+    // 1. BANK SOAL LENGKAP ASAS 1 BASA SUNDA KELAS XII (60 SOAL)
+    //    - 30 Pilihan Ganda (A-E) kalebet 5 soal sempalan Mahabarata & Ramayana
+    //    - 15 Drag & Drop (Séréd & Leupaskeun / Klik-Tempel)
+    //    - 15 Menjodohkan (Pasangkeun)
+    //    - Tingkat Kesulitan: 50% Mudah (30), 30% Sedang (18), 20% Sulit (12)
+    // =========================================================================
+    const FULL_QUESTION_BANK = [
+      // -----------------------------------------------------------------------
+      // BAGIAN A: 30 SOAL PILIHAN GANDA (A - E)
+      // -----------------------------------------------------------------------
+      {
+        id: 1,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Carita Wayang',
+        text: "Kecap 'wayang' asalna tina robahan kecap 'bayang' anu ngandung harti...",
+        options: ["Boneka kai", "Kalangkang", "Panggung lalakon", "Cahaya lampu", "Carita karuhun"],
+        answer: 1,
+        explanation: "Wayang asalna tina kecap 'bayang' anu hartina 'kalangkang', lantaran dina pagelaran wayang kulit nu dilalajoanan téh kalangkang dina kelir ku ayana cahaya balincong."
+      },
+      {
+        id: 2,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Carita Wayang',
+        text: "Lampu husus anu dipaké pikeun nyaangan kelir (layar) dina pagelaran wayang kulit nepi ka katémbong kalangkangna disebut...",
+        options: ["Gamelan", "Cempala", "Balincong", "Kecrék", "Janturan"],
+        answer: 2,
+        explanation: "Balincong nyaéta lampu dina pagelaran wayang kulit anu cahayana nyorot kana kelir nepi ka katémbong kalangkang wayang."
+      },
+      {
+        id: 3,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Carita Wayang',
+        text: "Babon carita wayang anu nyaritakeun lalakon terah Barata (Pandawa jeung Kurawa) sarta dianggit ku Wiyasa nyaéta...",
+        options: ["Ramayana", "Mahabarata", "Panji Semirang", "Damarwulan", "Arjuna Wiwaha"],
+        answer: 1,
+        explanation: "Mahabarata nyaéta carita anu nyaritakeun lalakon terah Barata, dianggit ku Wiyasa wangun puisi panjangna 200.000 jajar atawa 100.000 sloka."
+      },
+      {
+        id: 4,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Carita Wayang',
+        text: "Dina lalakon Ramayana, pihak anu nyekel kaadilan nyaéta Batara Rama, sedengkeun pihak anu murka nyaéta...",
+        options: ["Duryudana", "Dursasana", "Prabu Rahwana (Dasamuka)", "Ménak Jingga", "Kumbakarna"],
+        answer: 2,
+        explanation: "Dina lalakon Ramayana, anu nyekel kaadilan téh Batara Rama, ari anu murka nyaéta Prabu Rahwana atawa Dasamuka."
+      },
+      {
+        id: 5,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Carita Wayang',
+        text: "Wanda wayang anu lalakonna digambar dina lawon (kain), tuluy dibébérkeun nalika dipintonkeun disebut...",
+        options: ["Wayang purwa", "Wayang gedog", "Wayang bébér", "Wayang klitik", "Wayang krucil"],
+        answer: 2,
+        explanation: "Wayang bébér nyaéta wayang nu lalakonna digambar dina lawon, tuluy dibébérkeun."
+      },
+      {
+        id: 6,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Carita Wayang',
+        text: "Bédana antara wayang klitik jeung wayang krucil sanajan rupana méh sarua dijieun tina kayu gépéng nyaéta...",
+        options: [
+          "Wayang klitik maké kelir, ari wayang krucil teu maké kelir",
+          "Wayang krucil ngalakonkeun carita Damarwulan, ari wayang klitik mirip wayang purwa",
+          "Wayang klitik asalna ti Tiongkok, ari wayang krucil ti Cianjur",
+          "Wayang krucil dimaénkeun ku jelema, ari wayang klitik ku bonéka",
+          "Wayang klitik nyaritakeun sajarah Indonésia, ari wayang krucil carita Panji"
+        ],
+        answer: 1,
+        explanation: "Wayang klitik wujudna mirip wayang purwa tina kayu gépéng teu maké kelir, sedengkeun wayang krucil rupana méh sarua tapi ngalakonkeun carita Damarwulan."
+      },
+      {
+        id: 7,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Santikaning Dalang',
+        text: "Kecap 'santika' dina istilah 'santikaning dalang' ngandung harti...",
+        options: ["Élmu kawih", "Élmu kasatriaan", "Élmu ngagambar", "Élmu tatakrama", "Élmu sastra"],
+        answer: 1,
+        explanation: "Santikaning dalang diwangun ku kecap santikaning (tina santika = élmu kasatriaan) jeung dalang, hartina élmu keur ngatik dalang sangkan masagi lir sinatria."
+      },
+      {
+        id: 8,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Santikaning Dalang',
+        text: "Dina tetekon padalangan, kamampuh dalang ngarobah-robah sora pikeun ngabédakeun unggal tokoh wayang disebut...",
+        options: ["Renggep", "Engés", "Sabet", "Antawacana", "Kawiradya"],
+        answer: 3,
+        explanation: "Antawacana nyaéta kamampuh dalang ngarobah-robah sora (caturan wayang dina adegan)."
+      },
+      {
+        id: 9,
+        type: 'pg',
+        difficulty: 'Sulit',
+        category: 'Santikaning Dalang',
+        text: "Titénan rékabasa padalangan! Bédana antara 'janturan' jeung 'pocapan' dina bagian nyandra nyaéta...",
+        options: [
+          "Janturan maké basa Kawi, ari pocapan maké basa Sunda",
+          "Janturan mangrupa kakawén bubuka, ari pocapan mangrupa dialog tokoh",
+          "Janturan mah nyandra nu dibarengan ku gamelan, ari pocapan mah teu dibarengan ku gamelan",
+          "Janturan diucapkeun ku sindén, ari pocapan ku dalang",
+          "Janturan nyaritakeun perang, ari pocapan nyaritakeun banyol"
+        ],
+        answer: 2,
+        explanation: "Nyandra dibagi dua: janturan (basa lancaran dalang nyaritakeun jejer/adegan nagara nu dibarengan ku gamelan) jeung pocapan (nyandra nu teu dibarengan ku gamelan)."
+      },
+      {
+        id: 10,
+        type: 'pg',
+        difficulty: 'Sulit',
+        category: 'Carita Wayang',
+        text: "Dumasar kana bagan Pancakaki Mahabarata, saha ari lanceukna Pandawa anu misah bapa (anak Déwi Kunti ti Batara Surya)?",
+        options: ["Yudistira", "Duryudana", "Karna", "Abimanyu", "Gatotkaca"],
+        answer: 2,
+        explanation: "Aya saurang deui lanceukna Pandawa tapi misah bapa, nyaéta Karna, anak Déwi Kunti ti Batara Surya."
+      },
+      {
+        id: 11,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Carita Wayang',
+        passageTitle: "Sempalan Carita Wayang Mahabarata (Lalakon Pandawa Dadu)",
+        passage: "Dina pasamoan di Astinapura, Patih Sangkuni ngajak Yudistira maén dadu kalayan tarohan anu beuki lila beuki beurat. Sanajan Yudistira kawéntar raja anu adil jeung wijaksana, tapi ku licikna Sangkuni anu ngagunakeun dadu tulang sakti, hiji-hiji karajaan, dulur-dulurna, malah nepi ka Déwi Drupadi éléh dina méja judi. Tungtungna, Pandawa Lima kudu ngajalankeun hukuman dibuang ka leuweung salila dua belas taun jeung nyamur sataun di nagara Wirata.",
+        text: "Dumasar kana sempalan carita wayang Mahabarata di luhur, naon anu ngalantarankeun Pandawa Lima kudu ngajalankeun hukuman dibuang ka leuweung salila dua belas taun?",
+        options: [
+          "Pandawa éléh perang dina Baratayuda ngalawan Kurawa",
+          "Yudistira éléh dina maén dadu ku kalicikan Patih Sangkuni",
+          "Déwi Drupadi nolak kawin ka Duryudana di Astinapura",
+          "Pandawa hayang tatapa néangan jimat Layang Jamus Kalimusada",
+          "Prabu Déstarastra ngusir Pandawa ti nagara Wirata"
+        ],
+        answer: 1,
+        explanation: "Dina sempalan dicarioskeun yén Yudistira éléh maén dadu ku kalicikan Patih Sangkuni, sahingga Pandawa Lima kudu dibuang ka leuweung 12 taun jeung nyamur sataun."
+      },
+      {
+        id: 12,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Carita Wayang',
+        passageTitle: "Sempalan Carita Wayang Mahabarata (Perang Baratayuda — Karna Tanding)",
+        passage: "Di tegal Kurusétra, Adipati Karna papanggih jeung Arjuna dina perang tanding anu kacida rongkahna. Saéstuna Karna téh lanceukna Pandawa ti indung nu sarua, nyaéta Déwi Kunti. Sanajan geus dibéjaan ku Déwi Kunti jeung Batara Krésna ngeunaan asal-usulna, Karna tetep pengkuh ngabéla Kurawa lantaran ngarasa kahutangan budi ku Prabu Duryudana anu geus ngajungjung darajatna jadi raja di Awangga nalika dihina ku batur.",
+        text: "Amanat atawa ajén moral anu kagambar tina sikep Adipati Karna dina sempalan carita di luhur nyaéta...",
+        options: [
+          "Sifat sarakah hayang ngawasa sakuliah nagara Astinapura",
+          "Kasatiaan jeung panghormatan kana jasa batur anu geus nulungan",
+          "Rasa ceuceub ka indung kandung anu geus miceun dirina",
+          "Kasieun nyanghareupan kasaktén panah Pasopati milik Arjuna",
+          "Kahayang pikeun ngarebut tahta ti Prabu Duryudana"
+        ],
+        answer: 1,
+        explanation: "Adipati Karna némbongkeun sikep satia jeung mulang tarima (kahutangan budi) ka Prabu Duryudana anu geus ngangkat darajatna sanajan nyaho Kurawa aya di pihak nu salah."
+      },
+      {
+        id: 13,
+        type: 'pg',
+        difficulty: 'Sulit',
+        category: 'Carita Wayang',
+        passageTitle: "Sempalan Carita Wayang Mahabarata (Bisma Gugur)",
+        passage: "Resi Bisma mangrupa sesepuh Astinapura anu miboga kasaktén 'Swacanda Marana', hartina moal maot lamun lain ku kahayangna sorangan. Dina perang Baratayuda, euweuh hiji ogé satria Pandawa anu mampu ngéléhkeun Bisma. Tungtungna, Krésna ngatur siasat sangkan Srikandi maju ka médan perang dipayungan ku Arjuna. Barang ningali Srikandi, Resi Bisma ngaleupaskeun pakarangna sabab sadar yén Srikandi téh titisan Déwi Amba, nepi ka awak Bisma pinuh ku jamparing panah Arjuna.",
+        text: "Kunaon Resi Bisma ngahaja ngaleupaskeun pakarangna nalika nyanghareupan Srikandi dina medan perang Kurusétra?",
+        options: [
+          "Lantaran pakarang panah Resi Bisma geus béak dipaké ngalawan Bima",
+          "Lantaran Bisma geus jangji ka Yudistira moal ngalawan prajurit awéwé",
+          "Lantaran Bisma sadar yén Srikandi téh titisan Déwi Amba anu bakal jadi cukang lantaran ajalna",
+          "Lantaran Bisma kasieunan ningali cahaya panah Pasopati anu dicekel ku Arjuna",
+          "Lantaran Prabu Duryudana nitah Bisma mundur tina kalungguhan sénapati"
+        ],
+        answer: 2,
+        explanation: "Resi Bisma ngaleupaskeun pakarangna lantaran apal yén Srikandi mangrupa titisan Déwi Amba anu geus sumpah bakal males pati ka Bisma."
+      },
+      {
+        id: 14,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Carita Wayang',
+        passageTitle: "Sempalan Carita Wayang Ramayana (Kijang Kancana)",
+        passage: "Nalika Batara Rama, Déwi Sinta, jeung Laksmana ngumbara di leuweung Dandaka, ujug-ujug aya kijang anu buluna hurung emas ngulampreng di hareupeun pondok. Déwi Sinta kabitaeun pisan tuluy ménta ka Batara Rama sangkan néwak éta kijang keur inguan. Teu disangka-sangka, éta kijang téh saéstuna raksasa Marica anu nyamur pikeun ngolo Rama ngajauhan pondok, sangkan Prabu Rahwana bisa nyulik Déwi Sinta.",
+        text: "Saha ari tokoh anu nyamur jadi kijang emas dina sempalan carita Ramayana di luhur?",
+        options: ["Hanoman", "Subali", "Raksasa Marica", "Wibisana", "Sugriwa"],
+        answer: 2,
+        explanation: "Dina sempalan Ramayana dijelaskeun yén kijang emas téh saéstuna raksasa Marica anu nyamur pikeun ngajauhkeun Batara Rama tina pondok."
+      },
+      {
+        id: 15,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Carita Wayang',
+        passageTitle: "Sempalan Carita Wayang Ramayana (Anoman Obong)",
+        passage: "Hanoman diutus ku Batara Rama pikeun ngintip kaayaan Déwi Sinta di Taman Argasoka, karajaan Aléngka. Sanggeus masrahkeun ali (cingcin) ti Rama ka Sinta, Hanoman kanyahoan ku prajurit Aléngka tuluy ditéwak sarta dihukum beuleum ku Prabu Rahwana. Nanging ku kasakténna, seuneu anu ngabeuleum buntutna teu matak tiwas, malah dipaké ku Hanoman pikeun ngaduruk karaton Aléngka nepi ka burakrakan.",
+        text: "Naon tujuan utama Hanoman datang ka Taman Argasoka karajaan Aléngka numutkeun sempalan carita di luhur?",
+        options: [
+          "Pikeun nangtang perang tanding langsung ngalawan Prabu Rahwana",
+          "Pikeun ngintip kaayaan Déwi Sinta sarta masrahkeun ali ti Batara Rama",
+          "Pikeun ngarebut tahta karajaan Aléngka sarta dipasrahkeun ka Wibisana",
+          "Pikeun néangan ubar sakti di leuweung sabudeureun karajaan Aléngka",
+          "Pikeun ngabebaskeun raksasa Marica anu ditawan ku prajurit Aléngka"
+        ],
+        answer: 1,
+        explanation: "Hanoman diutus ku Batara Rama pikeun ngintip kaayaan Déwi Sinta di Taman Argasoka sarta masrahkeun ali (cingcin) tanda bukti ti Batara Rama."
+      },
+      {
+        id: 16,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Téks Pedaran & Artikel',
+        text: "Téks pedaran atawa éksposisi disebut ogé téks nonfiksi atawa karangan faktual lantaran...",
+        options: [
+          "Eusina mangrupa rékaan jeung imajinasi pangarang",
+          "Eusina medar ngeunaan hal konkrét dumasar kana fakta",
+          "Ditulis dina wangun pupuh jeung ugeran",
+          "Miboga palaku, latar, jeung galur carita",
+          "Eusina ngajak nu maca sangkan milu kana kahayang panulis"
+        ],
+        answer: 1,
+        explanation: "Téks pedaran disebut téks nonfiksi atawa karangan faktual lantaran eusina medar ngeunaan hal konkrét dumasar kana fakta."
+      },
+      {
+        id: 17,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Téks Pedaran & Artikel',
+        text: "Struktur téks pedaran anu ngawengku bubuka, eusi, jeung pamungkas sacara ngaruntuy disebut...",
+        options: [
+          "Oriéntasi, komplikasi, résolusi",
+          "Tésis, argumén, panandes",
+          "Bubuka, tiori, daptar acuan",
+          "Identifikasi, klasifikasi, définisi",
+          "Cangkang, eusi, wangsal"
+        ],
+        answer: 1,
+        explanation: "Struktur téks pedaran ngabogaan tilu bagian: Tésis (bubuka), Argumén (eusi), jeung Panandes (pamungkas)."
+      },
+      {
+        id: 18,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Téks Pedaran & Artikel',
+        text: "Bagian struktur téks pedaran anu diteundeun dina tungtung téks (paragrap pamungkas) sarta eusina mangrupa paneges atawa kacindekan disebut...",
+        options: ["Tésis", "Argumén", "Panandes", "Rangkay", "Mukadimah"],
+        answer: 2,
+        explanation: "Panandes diteundeun dina tungtung téks dina paragrap pamungkas, eusina paneges kana pernyataan saméméhna (kacindekan)."
+      },
+      {
+        id: 19,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Téks Pedaran & Artikel',
+        text: "Téks pedaran anu geus dimuat atawa dipublikasikeun dina majalah, koran, jurnal, atawa média sosial disebut...",
+        options: ["Biantara", "Artikel", "Wawancara", "Carpon", "Sisindiran"],
+        answer: 1,
+        explanation: "Téks pedaran anu geus dimuat dina majalah, koran, jurnal, atawa média sosial disebutna artikel."
+      },
+      {
+        id: 20,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Téks Pedaran & Artikel',
+        text: "Salah sahiji ciri karangan artikel nyaéta ditulis kalayan asmana nu nulisna. Istilah séjénna pikeun ciri ieu nyaéta...",
+        options: ["By line story", "Headline news", "Editorial board", "Foot note", "Ghost writer"],
+        answer: 0,
+        explanation: "Ciri kahiji wangunan karangan artikel nyaéta ditulis kalayan asmana (by line story)."
+      },
+      {
+        id: 21,
+        type: 'pg',
+        difficulty: 'Sulit',
+        category: 'Téks Pedaran & Artikel',
+        text: "Anu ngabédakeun antara artikel ilmiah jeung artikel semi-ilmiah tina jihat struktur jeung pidanganana nyaéta...",
+        options: [
+          "Artikel ilmiah dimuat dina koran, ari artikel semi-ilmiah dina jurnal",
+          "Artikel ilmiah boga struktur formal nu jinek (bubuka, tiori, métodeu, hasil, kacindekan, daptar acuan), ari semi-ilmiah strukturna basajan (bubuka, eusi, panutup)",
+          "Artikel ilmiah teu maké rujukan ahli, ari semi-ilmiah wajib maké rujukan",
+          "Artikel ilmiah basana popilér, ari semi-ilmiah basana kaku",
+          "Artikel ilmiah eusina fiksi, ari semi-ilmiah eusina fakta"
+        ],
+        answer: 1,
+        explanation: "Artikel ilmiah ilaharna dimuat dina jurnal/prosiding kalayan struktur formal nu jinek ditulis, sedengkeun artikel semi-ilmiah dimuat dina koran/majalah kalayan struktur basajan (bubuka, eusi, panutup)."
+      },
+      {
+        id: 22,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Téks Pedaran & Artikel',
+        text: "Dina nulis artikel, alinéa eusi anu ngajéntrékeun pedaran dumasar kana runtuyan tempat disebut sifatna...",
+        options: ["Kronologis", "Spasiologis", "Kausalitas", "Prédiktif", "Éksploratif"],
+        answer: 1,
+        explanation: "Alinéa eusi dina artikel sifatna bisa kronologis (runtuyan waktu), spasiologis (runtuyan tempat), jeung kausalitas (sabab-akibat)."
+      },
+      {
+        id: 23,
+        type: 'pg',
+        difficulty: 'Sulit',
+        category: 'Téks Pedaran & Artikel',
+        text: "Wanda téks pedaran anu eusina medar perkara anu can kajadian dumasar kana sawangan (analisis) nu nulisna disebut...",
+        options: ["Pedaran dékriptif", "Pedaran éksplanatif", "Pedaran prédiktif", "Pedaran éksploratif", "Pedaran naratif"],
+        answer: 2,
+        explanation: "Pedaran prédiktif nyaéta pedaran anu eusina medar perkara anu can kajadian dumasar sawangan (analisis) nu nulisna."
+      },
+      {
+        id: 24,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Tradisi Sunda',
+        text: "Istilah 'folklor' asalna tina kecap basa Inggris 'folk' jeung 'lore'. Kecap 'lore' ngandung harti...",
+        options: ["Kumpulan", "Tradisi", "Lisan", "Karuhun", "Upacara"],
+        answer: 1,
+        explanation: "Folklor asalna tina kecap 'folk' anu hartina kumpulan/gundukan jeung 'lore' anu hartina tradisi."
+      },
+      {
+        id: 25,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Tradisi Sunda',
+        text: "Paribasa 'Adat kakurung ku iga' dina pedaran ngeunaan tradisi ngandung harti...",
+        options: [
+          "Tiap daérah boga aturan séwang-séwangan",
+          "Tabéat atawa sipat bawaan nu hésé dipiceunna atawa dirobahna",
+          "Upacara adat kudu dilaksanakeun babarengan",
+          "Karuhun geus ninggalkeun warisan budaya",
+          "Adat istiadat téh aturan hukum nu kudu ditaati"
+        ],
+        answer: 1,
+        explanation: "Aya paribasa 'Adat kakurung ku iga', anu hartina tabéat nu hésé dipiceunna atawa dirobahna."
+      },
+      {
+        id: 26,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Tradisi Sunda',
+        text: "Upacara adat dina daur hirup masarakat Sunda pikeun ngariksa awéwé anu keur kakandungan tujuh bulan disebut...",
+        options: ["Nyiram", "Tingkeban", "Mulasara bali", "Ngarot", "Sérén taun"],
+        answer: 1,
+        explanation: "Patali jeung adat ngariksa nu reuneuh, aya nu disebut upacara tingkeban (upacara tujuh bulanan)."
+      },
+      {
+        id: 27,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Tradisi Sunda',
+        text: "Di handap ieu anu kaasup kana upacara adat wanda 'pésta rayat' di Tatar Sunda nyaéta...",
+        options: [
+          "Rebo wekasan jeung bubur asyura",
+          "Nyalawéan jeung hajat sasih",
+          "Sérén taun, ngalaksa, jeung ngarot",
+          "Tingkeban jeung mulasara bali",
+          "Ngirab jeung tahlilan"
+        ],
+        answer: 2,
+        explanation: "Upacara adat nu disebut pésta rayat di antarana: ampih paré, sérén taun, ngalaksa, ngarot, sidekah bumi, pésta laut, nyangku, ngalungsur pusaka."
+      },
+      {
+        id: 28,
+        type: 'pg',
+        difficulty: 'Sulit',
+        category: 'Tradisi Sunda',
+        text: "Dina struktur tahapan upacara tradisi Ngalaksa di Rancakalong Sumedang, léngkah katilu sanggeus 'béwara' jeung 'mera' nyaéta...",
+        options: [
+          "Ngawasuhan (ngisikan béas)",
+          "Ngineb (neundeun béas)",
+          "Meuseul (nutu paré)",
+          "Numbuk (nipung béas)",
+          "Ngalaksa (ngadonan tipung)"
+        ],
+        answer: 2,
+        explanation: "7 tahapan tradisi ngalaksa di Rancakalong Sumedang: 1) béwara, 2) mera, 3) meuseul (nutu paré), 4) ngawasuhan, 5) ngineb, 6) numbuk, 7) ngalaksa."
+      },
+      {
+        id: 29,
+        type: 'pg',
+        difficulty: 'Sedang',
+        category: 'Tradisi Sunda',
+        text: "Fungsi upacara adat pikeun ngamumulé budaya ti hiji entragan ka entragan satuluyna disebut fungsi...",
+        options: ["Kaagamaan", "Sosial", "Konsérvatif budaya", "Intégratif", "Édukatif"],
+        answer: 2,
+        explanation: "Fungsi konsérvatif budaya nyaéta fungsi upacara adat pikeun ngamumulé budaya ti hiji entragan ka entragan satuluyna."
+      },
+      {
+        id: 30,
+        type: 'pg',
+        difficulty: 'Mudah',
+        category: 'Tradisi Sunda',
+        text: "Dina ma'na simbolik upacara adat Sunda, kadaharan tradisional anu wangunna nyungcung ka luhur sarta dianggap ngandung kautamaan barokah nyaéta...",
+        options: ["Bakakak hayam", "Tumpeng", "Kupat", "Opak", "Laksa"],
+        answer: 1,
+        explanation: "Ma'na tumpeng dianggap ngabogaan kautamaan nu ngandung barokah kalayan wangun nyungcung ka luhur."
+      },
+
+      // -----------------------------------------------------------------------
+      // BAGIAN B: 15 SOAL DRAG & DROP (SÉRÉD & LEUPASKEUN / KLIK-TEMPEL)
+      // -----------------------------------------------------------------------
+      {
+        id: 31,
+        type: 'dragdrop',
+        difficulty: 'Mudah',
+        category: 'Carita Wayang',
+        text: "Papasingkeun tokoh-tokoh pewayangan di handap kana kelompokna dina carita Mahabarata!",
+        zones: ["Pandawa (Protagonis)", "Kurawa (Antagonis)"],
+        items: [
+          { id: "i1", label: "Yudistira (Darmakusumah)", targetZone: 0 },
+          { id: "i2", label: "Duryudana", targetZone: 1 },
+          { id: "i3", label: "Bima (Brataséna)", targetZone: 0 },
+          { id: "i4", label: "Dursasana", targetZone: 1 }
+        ],
+        explanation: "Pandawa (Yudistira, Bima, Arjuna, Nakula, Sadéwa) mangrupa tokoh protagonis, sedengkeun Kurawa (Duryudana, Dursasana, jsb.) tokoh antagonis."
+      },
+      {
+        id: 32,
+        type: 'dragdrop',
+        difficulty: 'Sedang',
+        category: 'Carita Wayang',
+        text: "Kelompokkeun wanda-wanda wayang di handap dumasar kana bahan atawa wujud asalna!",
+        zones: ["Wayang Kulit / Lawon", "Wayang Kai / Kayu"],
+        items: [
+          { id: "i1", label: "Wayang purwa", targetZone: 0 },
+          { id: "i2", label: "Wayang golék", targetZone: 1 },
+          { id: "i3", label: "Wayang bébér (lawon)", targetZone: 0 },
+          { id: "i4", label: "Wayang klitik (kayu gépéng)", targetZone: 1 }
+        ],
+        explanation: "Wayang purwa (kulit) jeung wayang bébér (lawon) lain tina kai, sedengkeun wayang golék jeung wayang klitik dijieun tina kai/kayu."
+      },
+      {
+        id: 33,
+        type: 'dragdrop',
+        difficulty: 'Sedang',
+        category: 'Carita Wayang',
+        text: "Cocogkeun judul lalakon di handap kana wanda wayang anu biasa ngalalakonkeunana!",
+        zones: ["Wayang Gedog", "Wayang Cepak / Krucil"],
+        items: [
+          { id: "i1", label: "Carita Panji Semirang", targetZone: 0 },
+          { id: "i2", label: "Prabu Damarwulan", targetZone: 1 },
+          { id: "i3", label: "Ménak Jingga", targetZone: 1 },
+          { id: "i4", label: "Lalakon Carita Panji", targetZone: 0 }
+        ],
+        explanation: "Wayang gedog ngalalakonkeun carita Panji (Panji Semirang), ari wayang cepak jeung wayang krucil ngalakonkeun carita Prabu Damarwulan jeung Ménak Jingga."
+      },
+      {
+        id: 34,
+        type: 'dragdrop',
+        difficulty: 'Sulit',
+        category: 'Carita Wayang',
+        text: "Pasingkeun putra-putra Prabu Pandu Déwanata di handap dumasar kana indungna (Déwi Kunti atawa Déwi Madrim)!",
+        zones: ["Anak Pandu ti Déwi Kunti", "Anak Pandu ti Déwi Madrim"],
+        items: [
+          { id: "i1", label: "Yudistira", targetZone: 0 },
+          { id: "i2", label: "Nakula", targetZone: 1 },
+          { id: "i3", label: "Arjuna", targetZone: 0 },
+          { id: "i4", label: "Sadéwa", targetZone: 1 }
+        ],
+        explanation: "Yudistira, Bima, jeung Arjuna mangrupa anak Pandu ti Déwi Kuntinalibrata. Ari si kembar Nakula jeung Sadéwa anak Pandu ti Déwi Madrim."
+      },
+      {
+        id: 35,
+        type: 'dragdrop',
+        difficulty: 'Mudah',
+        category: 'Santikaning Dalang',
+        text: "Bedakeun mana anu kaasup kana 'Rékabasa / Sastra Padalangan' jeung mana anu kaasup 'Waditra Gamelan Saléndro'!",
+        zones: ["Rékabasa Padalangan", "Waditra Gamelan Saléndro"],
+        items: [
+          { id: "i1", label: "Kakawén & Murwa", targetZone: 0 },
+          { id: "i2", label: "Bonang & Kenong", targetZone: 1 },
+          { id: "i3", label: "Nyandra & Antawacana", targetZone: 0 },
+          { id: "i4", label: "Rebab & Saron", targetZone: 1 }
+        ],
+        explanation: "Rékabasa padalangan ngawengku kakawén, murwa, nyandra, jeung antawacana. Waditra gamelan saléndro di antarana bonang, kenong, goong, kendang, rebab, jeung saron."
+      },
+      {
+        id: 36,
+        type: 'dragdrop',
+        difficulty: 'Mudah',
+        category: 'Téks Pedaran & Artikel',
+        text: "Séréd pernyataan di handap kana struktur téks pedaran anu merenah (Tésis, Argumén, atawa Panandes)!",
+        zones: ["Tésis (Bubuka)", "Argumén (Eusi)", "Panandes (Pamungkas)"],
+        items: [
+          { id: "i1", label: "Pernyataan awal patali jeung topik nu bakal dipedar", targetZone: 0 },
+          { id: "i2", label: "Alesan, fakta, jeung sumber pakar nu nguatan pamadegan", targetZone: 1 },
+          { id: "i3", label: "Kacindekan jeung paneges di paragrap ahir", targetZone: 2 }
+        ],
+        explanation: "Tésis aya di awal paragrap (bubuka), Argumén eusina fakta/sumber pakar (eusi), jeung Panandes mangrupa kacindekan di tungtung téks."
+      },
+      {
+        id: 37,
+        type: 'dragdrop',
+        difficulty: 'Mudah',
+        category: 'Téks Pedaran & Artikel',
+        text: "Kelompokkeun ciri-ciri jeung média pidangan antara 'Artikel Ilmiah' jeung 'Artikel Semi-Ilmiah'!",
+        zones: ["Artikel Ilmiah", "Artikel Semi-Ilmiah"],
+        items: [
+          { id: "i1", label: "Dimuat dina jurnal atawa buku prosiding", targetZone: 0 },
+          { id: "i2", label: "Dimuat dina koran, majalah, atawa média sosial", targetZone: 1 },
+          { id: "i3", label: "Struktur formal jinek (tiori, métodeu, daptar acuan)", targetZone: 0 },
+          { id: "i4", label: "Struktur basajan nyamuni (bubuka, eusi, panutup)", targetZone: 1 }
+        ],
+        explanation: "Artikel ilmiah dimuat dina jurnal/prosiding kalayan struktur formal jinek, ari semi-ilmiah dina koran/majalah/medsos kalayan struktur basajan."
+      },
+      {
+        id: 38,
+        type: 'dragdrop',
+        difficulty: 'Sedang',
+        category: 'Téks Pedaran & Artikel',
+        text: "Papasingkeun léngkah-léngkah nulis artikel di handap dumasar kana tahapanna!",
+        zones: ["Tahap Awal (Nangtukeun Topik)", "Tahap Ahir (Nyarungsum & Ngirim)"],
+        items: [
+          { id: "i1", label: "Milih téma nu aktual & nangtukeun judul (3-5 kecap)", targetZone: 0 },
+          { id: "i2", label: "Ngédit draf tina jihat standar basa & validitas data", targetZone: 1 },
+          { id: "i3", label: "Nangtukeun sikep pro atawa kontra kana téma", targetZone: 0 },
+          { id: "i4", label: "Ngirimkeun tulisan ka média massa atawa jurnal", targetZone: 1 }
+        ],
+        explanation: "Léngkah 1 nyaéta nangtukeun topik, téma, jeung judul; sedengkeun léngkah 6 jeung 7 nyaéta nyarungsum (ngédit) sarta ngirimkeun tulisan ka média."
+      },
+      {
+        id: 39,
+        type: 'dragdrop',
+        difficulty: 'Sulit',
+        category: 'Téks Pedaran & Artikel',
+        text: "Cocogkeun eusi bagian alinéa dina Mekarkeun Rangkay Karangan Artikel!",
+        zones: ["Alinéa Awal (Tésis)", "Alinéa Eusi", "Alinéa Pamungkas"],
+        items: [
+          { id: "i1", label: "Diwangun ku 3-4 kalimah nu ngajukeun opini", targetZone: 0 },
+          { id: "i2", label: "Sifatna bisa kronologis, spasiologis, atawa kausalitas", targetZone: 1 },
+          { id: "i3", label: "Ngandung konfirmasi gagasan jeung kalimah kapanasaran", targetZone: 2 }
+        ],
+        explanation: "Alinéa awal ngandung tésis (3-4 kalimah), alinéa eusi sifatna kronologis/spasiologis/kausalitas, alinéa pamungkas eusina kacindekan & konfirmasi gagasan."
+      },
+      {
+        id: 40,
+        type: 'dragdrop',
+        difficulty: 'Mudah',
+        category: 'Téks Pedaran & Artikel',
+        text: "Bedakeun mana anu kaasup kana 'Ciri Téks Pedaran' jeung mana anu 'Lain Ciri Téks Pedaran'!",
+        zones: ["Ciri Téks Pedaran", "Lain Ciri Téks Pedaran"],
+        items: [
+          { id: "i1", label: "Ngajawab pananya 5W + 1H kalayan akurat", targetZone: 0 },
+          { id: "i2", label: "Mihak sarta maksakeun kahayang nu nulis ka nu maca", targetZone: 1 },
+          { id: "i3", label: "Fakta jadi kontribusi kana pedaran kalayan basa baku", targetZone: 0 },
+          { id: "i4", label: "Ngagunakeun carita rékaan (fiksi) nu teu nyata", targetZone: 1 }
+        ],
+        explanation: "Téks pedaran eusina fakta, ngajawab 5W+1H, maké basa baku, sarta henteu mihak atawa maksakeun kahayang nu nulis."
+      },
+      {
+        id: 41,
+        type: 'dragdrop',
+        difficulty: 'Mudah',
+        category: 'Tradisi Sunda',
+        text: "Kelompokkeun wanda upacara adat Sunda di handap kana kategori 'Upacara Daur Hirup' atawa 'Upacara Nuansa Kaagamaan'!",
+        zones: ["Upacara Daur Hirup", "Nuansa Kaagamaan"],
+        items: [
+          { id: "i1", label: "Tingkeban (tujuh bulanan) & Sunatan", targetZone: 0 },
+          { id: "i2", label: "Rebo wekasan & Bubur asyura", targetZone: 1 },
+          { id: "i3", label: "Mulasara bali & Ngawinkeun", targetZone: 0 },
+          { id: "i4", label: "Nyalawéan & Hajat sasih", targetZone: 1 }
+        ],
+        explanation: "Tingkeban, sunatan, mulasara bali, ngawinkeun kaasup upacara daur hirup; ari rebo wekasan, bubur asyura, nyalawéan, hajat sasih nuansa kaagamaan."
+      },
+      {
+        id: 42,
+        type: 'dragdrop',
+        difficulty: 'Sedang',
+        category: 'Tradisi Sunda',
+        text: "Papasingkeun conto upacara adat di handap antara 'Pésta Rayat' jeung 'Upacara Daur Hirup'!",
+        zones: ["Pésta Rayat", "Upacara Daur Hirup"],
+        items: [
+          { id: "i1", label: "Sérén taun, Ngarot, jeung Nyangku", targetZone: 0 },
+          { id: "i2", label: "Adat nu nyiram jeung Ngurus orok", targetZone: 1 },
+          { id: "i3", label: "Sidekah bumi jeung Pésta dadung", targetZone: 0 },
+          { id: "i4", label: "Adat kapapaténan", targetZone: 1 }
+        ],
+        explanation: "Sérén taun, ngarot, nyangku, sidekah bumi, pésta dadung kaasup pésta rayat; ari nu nyiram, ngurus orok, kapapaténan kaasup upacara daur hirup."
+      },
+      {
+        id: 43,
+        type: 'dragdrop',
+        difficulty: 'Mudah',
+        category: 'Tradisi Sunda',
+        text: "Kelompokkeun conto-conto di handap kana 'Struktur Upacara Tradisi' anu merenah!",
+        zones: ["Latar Upacara", "Properti Upacara"],
+        items: [
+          { id: "i1", label: "Di luar rohangan dina waktu isuk-isuk", targetZone: 0 },
+          { id: "i2", label: "Pakakas, papakéan adat, jeung kadaharan", targetZone: 1 },
+          { id: "i3", label: "Di jero imah/gedong dina waktu bada isa", targetZone: 0 },
+          { id: "i4", label: "Tumpeng jeung rupa-rupa sasajén", targetZone: 1 }
+        ],
+        explanation: "Latar upacara nyoko kana tempat jeung waktu; ari properti nyoko kana alat-alat/pakakas, papakéan, jeung kadaharan."
+      },
+      {
+        id: 44,
+        type: 'dragdrop',
+        difficulty: 'Sulit',
+        category: 'Tradisi Sunda',
+        text: "Séréd tahapan upacara tradisi Ngalaksa di Rancakalong Sumedang di handap kana kelompok 'Tahapan Awal (1-3)' atawa 'Tahapan Lanjutan (4-7)'!",
+        zones: ["Tahapan Awal (1 - 3)", "Tahapan Lanjutan (4 - 7)"],
+        items: [
+          { id: "i1", label: "Béwara (musawarah) & Mera (ngabagi bahan)", targetZone: 0 },
+          { id: "i2", label: "Ngawasuhan (ngisikan béas) & Ngineb", targetZone: 1 },
+          { id: "i3", label: "Meuseul (nutu paré)", targetZone: 0 },
+          { id: "i4", label: "Numbuk (nipung béas) & Ngalaksa", targetZone: 1 }
+        ],
+        explanation: "Urutan Ngalaksa: 1. béwara, 2. mera, 3. meuseul (Tahap 1-3); diteruskeun 4. ngawasuhan, 5. ngineb, 6. numbuk, 7. ngalaksa (Tahap 4-7)."
+      },
+      {
+        id: 45,
+        type: 'dragdrop',
+        difficulty: 'Mudah',
+        category: 'Tradisi Sunda',
+        text: "Bedakeun mana anu kaasup '5 Unsur Tradisi/Adat Istiadat' jeung mana anu '3 Rupa Ajén Budaya'!",
+        zones: ["Unsur Tradisi", "Rupa Ajén Budaya"],
+        items: [
+          { id: "i1", label: "Sakurang-kurangna tilu entragan (generasi)", targetZone: 0 },
+          { id: "i2", label: "Sistim norma & Sistim hukum", targetZone: 1 },
+          { id: "i3", label: "Dipilampah tuluy-tuluyan & aya diménsi waktu", targetZone: 0 },
+          { id: "i4", label: "Aturan husus nu nyoko kana aturan masarakat", targetZone: 1 }
+        ],
+        explanation: "Unsur tradisi di antarana dipilampah tuluy-tuluyan, aya diménsi waktu, jeung min. 3 generasi. Ari ajén budaya aya 3: sistim norma, sistim hukum, jeung aturan husus."
+      },
+
+      // -----------------------------------------------------------------------
+      // BAGIAN C: 15 SOAL MENJODOHKAN (PASANGKEUN)
+      // -----------------------------------------------------------------------
+      {
+        id: 46,
+        type: 'matching',
+        difficulty: 'Mudah',
+        category: 'Carita Wayang',
+        text: "Pasangkeun wanda wayang di beulah kénca jeung ciri hasna di beulah katuhu!",
+        pairs: [
+          { left: "Wayang titi (potéhi)", right: "Wayang anu nyaritakeun lalakon ti nagri Tiongkok" },
+          { left: "Wayang liligong", right: "Wayang klitik ti Cianjur, lalakonna mupu kembang" },
+          { left: "Wayang suluh", right: "Nyritakeun sajarah Indonésia pikeun panyuluhan" },
+          { left: "Wayang wong", right: "Wayang jelema, lalakonna tina Mahabarata" }
+        ],
+        explanation: "Wayang titi ti Tiongkok, wayang liligong ti Cianjur, wayang suluh ngeunaan sajarah Indonésia, jeung wayang wong dimaénkeun ku jelema."
+      },
+      {
+        id: 47,
+        type: 'matching',
+        difficulty: 'Sedang',
+        category: 'Santikaning Dalang',
+        text: "Pasangkeun istilah tetekon dalang di beulah kénca jeung hartina anu merenah di beulah katuhu!",
+        pairs: [
+          { left: "Renggep", right: "Mampuh nyirep nu lalajo ku pintonan nu hadé" },
+          { left: "Sabet", right: "Parigel molahkeun wayang" },
+          { left: "Paramakawi", right: "Apal kana basa Kawi" },
+          { left: "Amardawalagu", right: "Weruh kana lagu / kawih" }
+        ],
+        explanation: "Renggep = nyirep nu lalajo; sabet = parigel molahkeun wayang; paramakawi = apal basa Kawi; amardawalagu = weruh kana lagu."
+      },
+      {
+        id: 48,
+        type: 'matching',
+        difficulty: 'Sedang',
+        category: 'Santikaning Dalang',
+        text: "Pasangkeun istilah tetekon dalang séjénna jeung hartina dina pakeliran!",
+        pairs: [
+          { left: "Engés", right: "Bisa ngahudang rasa nu lalajo" },
+          { left: "Tutug", right: "Mampuh kana dramaturgi" },
+          { left: "Kawiradya", right: "Mahér ngawihkeun kakawén tokoh wayang" },
+          { left: "Awicarita", right: "Weruh kana carita wayang" }
+        ],
+        explanation: "Engés = ngahudang rasa; tutug = dramaturgi; kawiradya = mahér kakawén; awicarita = weruh kana carita wayang."
+      },
+      {
+        id: 49,
+        type: 'matching',
+        difficulty: 'Mudah',
+        category: 'Santikaning Dalang',
+        text: "Pasangkeun istilah sastra (rékabasa) padalangan di handap jeung kateranganana!",
+        pairs: [
+          { left: "Kakawén", right: "Suluk padalangan mangrupa puisi dina basa Kawi" },
+          { left: "Murwa", right: "Suluk bubuka anu dikawihkeun dina wiwitan carita" },
+          { left: "Nyandra", right: "Déskripsi adegan maké basa prosa pakeliran" },
+          { left: "Antawacana", right: "Caturan atawa dialog wayang dina adegan" }
+        ],
+        explanation: "Kakawén = suluk puisi basa Kawi; murwa = suluk bubuka; nyandra = déskripsi adegan prosa; antawacana = caturan/dialog wayang."
+      },
+      {
+        id: 50,
+        type: 'matching',
+        difficulty: 'Sulit',
+        category: 'Carita Wayang',
+        text: "Pasangkeun tokoh dina Bagan Pancakaki Mahabarata di beulah kénca jeung silsilahna di beulah katuhu!",
+        pairs: [
+          { left: "Abyasa", right: "Anak Setiawati ti Parasara" },
+          { left: "Pandu", right: "Anak Abyasa ti Déwi Ambalika" },
+          { left: "Déstarastra", right: "Anak Abyasa ti Déwi Ambika" },
+          { left: "Parikesit", right: "Anak Abimanyu ti Utari" }
+        ],
+        explanation: "Numutkeun bagan Pancakaki Mahabarata: Abyasa anak Setiawati-Parasara, Pandu anak Abyasa-Ambalika, Déstarastra anak Abyasa-Ambika, Parikesit anak Abimanyu-Utari."
+      },
+      {
+        id: 51,
+        type: 'matching',
+        difficulty: 'Mudah',
+        category: 'Téks Pedaran & Artikel',
+        text: "Pasangkeun unsur pananya 5W + 1H dina ciri téks pedaran jeung tarjamahanana dina basa Sunda!",
+        pairs: [
+          { left: "Who", right: "Saha" },
+          { left: "Why", right: "Kunaon" },
+          { left: "How", right: "Kumaha" },
+          { left: "Where", right: "Di mana" }
+        ],
+        explanation: "5W + 1H dina basa Sunda nyaéta saha (who), naon (what), di mana (where), iraha (when), kunaon (why), jeung kumaha (how)."
+      },
+      {
+        id: 52,
+        type: 'matching',
+        difficulty: 'Sedang',
+        category: 'Téks Pedaran & Artikel',
+        text: "Pasangkeun téhnik nulis téks pedaran di beulah kénca jeung cara ngajéntrékeunana di beulah katuhu!",
+        pairs: [
+          { left: "Téhnik idéntifikasi", right: "Ngajéntrékeun hiji perkara ku cara medar ciri-cirina" },
+          { left: "Téhnik klasifikasi", right: "Ngajéntrékeun ku cara midangkeun papasinganana" },
+          { left: "Téhnik définisi", right: "Ngajéntrékeun ku cara méré wangenan atawa katerangan" },
+          { left: "Téhnik prosés", right: "Méré gambaran prosés nyieunna éta perkara" }
+        ],
+        explanation: "Idéntifikasi = medar ciri-cirina; klasifikasi = papasinganana; définisi = méré wangenan; prosés = gambaran prosés nyieunna."
+      },
+      {
+        id: 53,
+        type: 'matching',
+        difficulty: 'Sulit',
+        category: 'Téks Pedaran & Artikel',
+        text: "Pasangkeun opat wanda téks pedaran dina nulis artikel jeung eusi pedaranana!",
+        pairs: [
+          { left: "Pedaran prédiktif", right: "Medar perkara nu can kajadian dumasar analisis nu nulis" },
+          { left: "Pedaran éksploratif", right: "Medar perkara nu leubeut ku fakta luyu jeung sawangan" },
+          { left: "Pedaran déskriptif", right: "Ngagambarkeun pasualan dina kahirupan" },
+          { left: "Pedaran éksplanatif", right: "Ngajéntrékeun hiji perkara dumasar pamadegan nu nulis" }
+        ],
+        explanation: "Prédiktif = can kajadian; éksploratif = leubeut fakta; déskriptif = ngagambarkeun pasualan; éksplanatif = dumasar pamadegan nu nulis."
+      },
+      {
+        id: 54,
+        type: 'matching',
+        difficulty: 'Sedang',
+        category: 'Téks Pedaran & Artikel',
+        text: "Pasangkeun gaya dina nulis pedaran jeung fungsina kana fakta!",
+        pairs: [
+          { left: "Gaya déskripsi", right: "Ngadadarkeun fakta" },
+          { left: "Gaya narasi", right: "Nyaritakeun fakta" },
+          { left: "Gaya arguméntasi", right: "Ngajéntrékeun fakta" },
+          { left: "Téhnik ilustrasi", right: "Néangan jeung méré gambaran kana éta perkara" }
+        ],
+        explanation: "Déskripsi = ngadadarkeun fakta, narasi = nyaritakeun fakta, arguméntasi = ngajéntrékeun fakta."
+      },
+      {
+        id: 55,
+        type: 'matching',
+        difficulty: 'Mudah',
+        category: 'Téks Pedaran & Artikel',
+        text: "Pasangkeun léngkah kagiatan nulis artikel di handap jeung kateranganana!",
+        pairs: [
+          { left: "Nyusun rangkay karangan", right: "Disusun dina runtuyan frasa atawa kalimah sangkan babari mekarkeun" },
+          { left: "Ngumpulkeun data jeung acuan", right: "Diperlukeun keur nguatan tésis sarta cutatanana basajan" },
+          { left: "Nyarungsum tulisan", right: "Ngédit draf tina jihat standar basa jeung validitas data" },
+          { left: "Nangtukeun judul artikel", right: "Kudu ngawakilan téma, singget (3-5 kecap), jeung dedet" }
+        ],
+        explanation: "Luyu jeung Tabel Tahap Kagiatan Nulis Artikel."
+      },
+      {
+        id: 56,
+        type: 'matching',
+        difficulty: 'Mudah',
+        category: 'Tradisi Sunda',
+        text: "Pasangkeun istilah tradisi jeung adat di beulah kénca jeung asal kecap atawa hartina di beulah katuhu!",
+        pairs: [
+          { left: "Tradition (Inggris)", right: "Adat kabiasaan atawa tali paranti turun-tumurun" },
+          { left: "Adath (Arab)", right: "Tabéat atawa sipat bawaan" },
+          { left: "Folk (Inggris)", right: "Kumpulan atawa gundukan" },
+          { left: "Adat kabiasaan", right: "Tata polah nu angger tur turun-tumurun ti entragan ka entragan" }
+        ],
+        explanation: "Tradition = tali paranti turun-tumurun; adath = tabéat/sipat bawaan; folk = kumpulan/gundukan."
+      },
+      {
+        id: 57,
+        type: 'matching',
+        difficulty: 'Sedang',
+        category: 'Tradisi Sunda',
+        text: "Pasangkeun fungsi upacara adat di handap jeung tujuanana anu bener!",
+        pairs: [
+          { left: "Fungsi kaagamaan", right: "Pikeun ngahormat Pangéran jeung karuhun" },
+          { left: "Fungsi sosial", right: "Pikeun kasalametan diri, kulawarga, jeung masarakat" },
+          { left: "Fungsi intégratif", right: "Pikeun ngagumulungkeun antara sawangan hirup jeung étos" },
+          { left: "Fungsi édukatif", right: "Pikeun ngatik masarakat sangkan mikawanoh jeung miara tradisi" }
+        ],
+        explanation: "Kaagamaan = ngahormat Pangéran/karuhun; sosial = kasalametan; intégratif = ngagumulungkeun sawangan hirup & étos; édukatif = ngatik masarakat."
+      },
+      {
+        id: 58,
+        type: 'matching',
+        difficulty: 'Sulit',
+        category: 'Tradisi Sunda',
+        text: "Pasangkeun istilah tahapan upacara tradisi Ngalaksa di Rancakalong Sumedang jeung hartina!",
+        pairs: [
+          { left: "Béwara", right: "Musawarah saméméh kagiatan" },
+          { left: "Mera", right: "Ngabagi-bagi bahan" },
+          { left: "Ngawasuhan", right: "Ngisikan béas" },
+          { left: "Ngineb", right: "Neundeun béas" }
+        ],
+        explanation: "Béwara = musawarah, mera = ngabagi-bagi bahan, ngawasuhan = ngisikan béas, ngineb = neundeun béas."
+      },
+      {
+        id: 59,
+        type: 'matching',
+        difficulty: 'Sulit',
+        category: 'Tradisi Sunda',
+        text: "Pasangkeun tahapan saterusna dina tradisi Ngalaksa Rancakalong jeung hartina!",
+        pairs: [
+          { left: "Meuseul", right: "Nutu paré" },
+          { left: "Numbuk", right: "Nipung béas" },
+          { left: "Ngalaksa", right: "Ngadonan tipung" },
+          { left: "Palaku upacara", right: "Budak, rumaja, kolot, awéwé, atawa lalaki nu ngalaksanakeun" }
+        ],
+        explanation: "Meuseul = nutu paré, numbuk = nipung béas, ngalaksa = ngadonan tipung."
+      },
+      {
+        id: 60,
+        type: 'matching',
+        difficulty: 'Sedang',
+        category: 'Tradisi Sunda',
+        text: "Pasangkeun tilu rupa ajén budaya jeung paribasa tradisi Sunda jeung hartina!",
+        pairs: [
+          { left: "Sistim norma", right: "Ajén budaya ngeunaan peranan hiji jalma dina lingkunganana" },
+          { left: "Sistim hukum", right: "Aturan dina kahirupan masarakat pikeun ngawangun suasana tartib" },
+          { left: "Ciri sabumi cara sadésa", right: "Tiap daérah boga cara jeung ciri masing-masing anu béda-béda" },
+          { left: "Adat istiadat", right: "Ajén budaya nu pangabstrakna mangrupa ideu, gagasan, jeung pikiran" }
+        ],
+        explanation: "Sistim norma = peranan jalma; sistim hukum = aturan suasana tartib; Ciri sabumi cara sadésa = tiap daérah boga ciri béda."
+      }
+    ];
+
+    // =========================================================================
+    // 2. APPLICATION STATE & STORAGE KEYS
+    // =========================================================================
+    const STORAGE_KEY_URL = 'sas_sunda_gas_url';
+    const STORAGE_KEY_LOCAL_RECAP = 'sas_sunda_local_recap';
+    const STORAGE_KEY_LIVE_SESSIONS = 'sas_sunda_live_sessions';
+    // TEMPELKAN URL WEB APP GOOGLE APPS SCRIPT (/exec) ANDA DI BAWAH INI:
+    const DEFAULT_GAS_URL = '';
+
+    let state = {
+      gasUrl: localStorage.getItem(STORAGE_KEY_URL) || DEFAULT_GAS_URL,
+      sessionId: 'SES-' + Math.random().toString(36).substring(2, 8).toUpperCase(),
+      student: { nama: '', kelas: '', absen: '' },
+      activeQuestions: [],
+      examActive: false,
+      terminatedByCheat: false,
+      examSubmitted: false,
+      currentIndex: 0,
+      answers: [],
+      selectedChipId: null,
+      selectedLeftIdx: null,
+      violations: 0,
+      lastViolationTs: 0,
+      teacherModeEnabled: false,
+      teacherUnlocked: false,
+      teacherPass: '',
+      teacherSubTab: 'rekap',
+      recapSourceMode: 'auto',
+      recapRows: [],
+      liveSessionsMap: {}
+    };
+
+    const liveChannel = ('BroadcastChannel' in window) ? new BroadcastChannel('asas_sunda_live_proctor') : null;
+
+    // =========================================================================
+    // 2B. ALGORITMA TOTP DINAMIS 6 DIGIT (INTERVAL 60 DETIK + SINKRONISASI UTC)
+    // =========================================================================
+    const TOTP_SECRET_KEY = "SMAN1SUKARAJA-BASASUNDA-XII-2026-2027";
+    const TOTP_INTERVAL_SEC = 60;
+    let utcOffsetMs = 0;
+    let utcSynced = false;
+    let tokenTickerInterval = null;
+
+    async function syncServerUtcTime() {
+      const candidateUrls = [];
+      if (state.gasUrl) candidateUrls.push(state.gasUrl);
+      candidateUrls.push(window.location.href);
+
+      for (const u of candidateUrls) {
+        try {
+          const t0 = Date.now();
+          const res = await fetch(u, { method: 'HEAD', cache: 'no-store' });
+          const t1 = Date.now();
+          const dateHeader = res.headers.get('Date');
+          if (dateHeader) {
+            const serverMs = new Date(dateHeader).getTime();
+            if (!isNaN(serverMs)) {
+              const rttHalf = Math.round((t1 - t0) / 2);
+              utcOffsetMs = (serverMs + rttHalf) - t1;
+              utcSynced = true;
+              updateUtcStatusBadges();
+              return;
+            }
+          }
+        } catch (e) {}
+      }
+
+      try {
+        const t0 = Date.now();
+        const res = await fetch('https://worldtimeapi.org/api/timezone/Etc/UTC', { cache: 'no-store' });
+        const t1 = Date.now();
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.unixtime) {
+            const serverMs = data.unixtime * 1000;
+            utcOffsetMs = (serverMs + Math.round((t1 - t0) / 2)) - t1;
+            utcSynced = true;
+            updateUtcStatusBadges();
+            return;
+          }
+        }
+      } catch (e) {}
+      updateUtcStatusBadges();
+    }
+
+    function getSynchronizedUtcNowMs() {
+      return Date.now() + utcOffsetMs;
+    }
+
+    function updateUtcStatusBadges() {
+      const stBadge = document.getElementById('studentUtcBadge');
+      const tcSync = document.getElementById('teacherSyncStatus');
+      if (stBadge) {
+        stBadge.textContent = utcSynced ? "✓ UTC Server Sync" : "UTC Time Sync";
+        stBadge.className = utcSynced
+          ? "text-[11px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-700"
+          : "text-[11px] font-mono font-bold px-2 py-0.5 rounded-md bg-white border border-stone-200 text-slate-600";
+      }
+      if (tcSync) {
+        tcSync.textContent = utcSynced ? "Sinkronisasi Waktos: UTC Server (Akurat)" : "Sinkronisasi Waktos: UTC Perangkat";
+      }
+    }
+
+    async function computeTotpCodeForCounter(counter) {
+      const enc = new TextEncoder();
+      const keyData = enc.encode(TOTP_SECRET_KEY);
+      const counterBuf = new ArrayBuffer(8);
+      const view = new DataView(counterBuf);
+      view.setUint32(0, Math.floor(counter / 0x100000000), false);
+      view.setUint32(4, counter >>> 0, false);
+
+      if (window.crypto && window.crypto.subtle) {
+        const cryptoKey = await window.crypto.subtle.importKey(
+          'raw',
+          keyData,
+          { name: 'HMAC', hash: { name: 'SHA-1' } },
+          false,
+          ['sign']
+        );
+        const sig = await window.crypto.subtle.sign('HMAC', cryptoKey, counterBuf);
+        const hmac = new Uint8Array(sig);
+        const offset = hmac[hmac.length - 1] & 0x0f;
+        const binary =
+          ((hmac[offset] & 0x7f) << 24) |
+          ((hmac[offset + 1] & 0xff) << 16) |
+          ((hmac[offset + 2] & 0xff) << 8) |
+          (hmac[offset + 3] & 0xff);
+        return String(binary % 1000000).padStart(6, '0');
+      }
+
+      let h1 = 0x811c9dc5;
+      const seedStr = `${TOTP_SECRET_KEY}:${counter}`;
+      for (let i = 0; i < seedStr.length; i++) {
+        h1 ^= seedStr.charCodeAt(i);
+        h1 = Math.imul(h1, 0x01000193);
+      }
+      return String(Math.abs(h1) % 1000000).padStart(6, '0');
+    }
+
+    async function getCurrentTotpToken() {
+      const nowSec = Math.floor(getSynchronizedUtcNowMs() / 1000);
+      const counter = Math.floor(nowSec / TOTP_INTERVAL_SEC);
+      return await computeTotpCodeForCounter(counter);
+    }
+
+    async function validateStudentToken(inputCode) {
+      const clean = String(inputCode || '').trim();
+      if (!/^[0-9]{6}$/.test(clean)) return false;
+
+      const nowMs = getSynchronizedUtcNowMs();
+      const nowSec = Math.floor(nowMs / 1000);
+      const currentCounter = Math.floor(nowSec / TOTP_INTERVAL_SEC);
+      const elapsedInWindow = nowSec % TOTP_INTERVAL_SEC;
+
+      const currentToken = await computeTotpCodeForCounter(currentCounter);
+      if (clean === currentToken) return true;
+
+      if (elapsedInWindow <= 10) {
+        const prevToken = await computeTotpCodeForCounter(currentCounter - 1);
+        if (clean === prevToken) return true;
+      }
+      return false;
+    }
+
+    async function refreshTokenDisplays() {
+      const nowMs = getSynchronizedUtcNowMs();
+      const nowSec = Math.floor(nowMs / 1000);
+      const elapsed = nowSec % TOTP_INTERVAL_SEC;
+      const remaining = TOTP_INTERVAL_SEC - elapsed;
+      const pct = Math.max(0, Math.min(100, (remaining / TOTP_INTERVAL_SEC) * 100));
+
+      const token = await getCurrentTotpToken();
+      const formattedToken = `${token.slice(0, 3)} ${token.slice(3)}`;
+
+      const dispEl = document.getElementById('teacherTokenDisplay');
+      const badgeEl = document.getElementById('tokenCountdownBadge');
+      const textEl = document.getElementById('tokenCountdownText');
+      const barEl = document.getElementById('tokenProgressBar');
+      const clockEl = document.getElementById('teacherUtcClock');
+
+      if (dispEl) {
+        dispEl.textContent = formattedToken;
+        dispEl.dataset.rawToken = token;
+      }
+      if (badgeEl) {
+        badgeEl.textContent = `${remaining}d`;
+        badgeEl.className = remaining <= 10
+          ? "px-2.5 py-0.5 rounded-lg bg-rose-500 text-white font-mono font-extrabold text-xs animate-pulse"
+          : "px-2.5 py-0.5 rounded-lg bg-amber-400 text-slate-950 font-mono font-extrabold text-xs";
+      }
+      if (textEl) textEl.textContent = `${remaining} detik deui`;
+      if (barEl) {
+        barEl.style.width = `${pct}%`;
+        barEl.className = remaining <= 10
+          ? "h-full bg-rose-400 transition-all duration-300 rounded-full"
+          : "h-full bg-amber-400 transition-all duration-300 rounded-full";
+      }
+      if (clockEl) {
+        const d = new Date(nowMs);
+        clockEl.textContent = `UTC: ${String(d.getUTCHours()).padStart(2, '0')}:${String(d.getUTCMinutes()).padStart(2, '0')}:${String(d.getUTCSeconds()).padStart(2, '0')}`;
+      }
+    }
+
+    function startTokenTicker() {
+      if (tokenTickerInterval) clearInterval(tokenTickerInterval);
+      refreshTokenDisplays();
+      tokenTickerInterval = setInterval(refreshTokenDisplays, 500);
+    }
+
+    window.copyCurrentToken = async function() {
+      const token = await getCurrentTotpToken();
+      try {
+        await navigator.clipboard.writeText(token);
+        showToast(`Token ${token} parantos disalin! Siap ditempel ka grup kelas.`, "success");
+      } catch (e) {
+        const tmp = document.createElement('input');
+        tmp.value = token;
+        document.body.appendChild(tmp);
+        tmp.select();
+        document.execCommand('copy');
+        document.body.removeChild(tmp);
+        showToast(`Token ${token} parantos disalin!`, "success");
+      }
+    };
+
+    // =========================================================================
+    // 3. INITIALIZATION & ACCESS MODE CONTROLLER (?mode=guru OR PASSWORD UNLOCK)
+    // =========================================================================
+    function applyAccessVisibility() {
+      const allowed = isTeacherAccessAllowed();
+      const btnSplashTeacher = document.getElementById('btnSplashTeacher');
+      const navTeacherBtn = document.getElementById('navTeacher');
+      const setupGearBtn = document.getElementById('btnNavSetupGear');
+      const btnResultTeacher = document.getElementById('btnResultTeacher');
+      const btnProctorLock = document.getElementById('btnNavProctorLock');
+      const btnSplashModeToggle = document.getElementById('btnTogglePreviewModeSplash');
+
+      if (allowed) {
+        if (btnSplashTeacher) btnSplashTeacher.classList.remove('hidden');
+        if (navTeacherBtn) navTeacherBtn.classList.remove('hidden');
+        if (setupGearBtn) setupGearBtn.classList.remove('hidden');
+        if (btnResultTeacher) btnResultTeacher.classList.remove('hidden');
+        if (btnProctorLock) btnProctorLock.classList.add('hidden');
+        if (btnSplashModeToggle) btnSplashModeToggle.textContent = "✓ Mode Guru & Proktor Aktif";
+      } else {
+        if (btnSplashTeacher) btnSplashTeacher.classList.add('hidden');
+        if (navTeacherBtn) navTeacherBtn.classList.add('hidden');
+        if (setupGearBtn) setupGearBtn.classList.add('hidden');
+        if (btnResultTeacher) btnResultTeacher.classList.add('hidden');
+        if (btnProctorLock) btnProctorLock.classList.remove('hidden');
+        if (btnSplashModeToggle) btnSplashModeToggle.textContent = "🔐 Mode Proktor / Guru";
+      }
+    }
+
+    window.requestTeacherModeUnlock = function() {
+      if (state.examActive) {
+        showToast("Teu tiasa muka Mode Guru nalika ujian nuju lumangsung!", "error");
+        return;
+      }
+      document.getElementById('modeModalError').classList.add('hidden');
+      document.getElementById('modeModalPassInput').value = '';
+      document.getElementById('teacherModeModal').classList.remove('hidden');
+      setTimeout(() => document.getElementById('modeModalPassInput').focus(), 100);
+    };
+
+    window.closeTeacherModeModal = function() {
+      document.getElementById('teacherModeModal').classList.add('hidden');
+    };
+
+    window.confirmTeacherModeModal = function() {
+      const pass = document.getElementById('modeModalPassInput').value.trim();
+      const errEl = document.getElementById('modeModalError');
+      if (pass !== 'sunda2026') {
+        errEl.textContent = "❌ Password guru salah! (Default: sunda2026)";
+        errEl.classList.remove('hidden');
+        return;
+      }
+      state.teacherModeEnabled = true;
+      state.teacherUnlocked = true;
+      state.teacherPass = pass;
+      closeTeacherModeModal();
+      applyAccessVisibility();
+      enterApplication('teacher');
+      showToast("Mode Guru & Proktor diaktipkeun!", "success");
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('mode') === 'guru') {
+        state.teacherModeEnabled = true;
+      }
+
+      applyAccessVisibility();
+      updateConnectionIndicator();
+      syncServerUtcTime();
+      startTokenTicker();
+
+      setInterval(() => {
+        if (state.examActive) emitStudentHeartbeat('UJIAN');
+        if (state.teacherUnlocked && state.teacherSubTab === 'monitor') pollLiveMonitorSources();
+      }, 3000);
+    });
+
+    function updateConnectionIndicator() {
+      const dot = document.getElementById('connectionDot');
+      const badge = document.getElementById('dataSourceBadge');
+      const gateHint = document.getElementById('gateConnectionHint');
+      const syncLocalBtn = document.getElementById('btnSyncLocalToSheet');
+      const localList = JSON.parse(localStorage.getItem(STORAGE_KEY_LOCAL_RECAP) || '[]');
+      const localBadge = document.getElementById('localCountBadge');
+      if (localBadge) localBadge.textContent = localList.length;
+
+      if (state.gasUrl) {
+        if (dot) dot.className = "absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-400 border border-sunda-dark";
+        if (gateHint) gateHint.textContent = "Status: Terhubung ka Google Sheets";
+        if (syncLocalBtn && localList.length > 0) syncLocalBtn.classList.remove('hidden');
+        if (badge) {
+          if (state.recapSourceMode === 'local') {
+            badge.textContent = "Sumber: Rékaman Lokal Browser";
+            badge.className = "px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800";
+          } else {
+            badge.textContent = "Sumber: Google Sheets (Rekap SAS)";
+            badge.className = "px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800";
+          }
+        }
+      } else {
+        if (dot) dot.className = "absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-amber-400 border border-sunda-dark";
+        if (gateHint) gateHint.textContent = "Status: Penyimpanan Lokal Browser";
+        if (syncLocalBtn) syncLocalBtn.classList.add('hidden');
+        if (badge) {
+          badge.textContent = "Sumber: Rékaman Lokal Browser";
+          badge.className = "px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800";
+        }
+      }
+    }
+
+    // =========================================================================
+    // 4. VIEW NAVIGATION
+    // =========================================================================
+    function isTeacherAccessAllowed() {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get('mode') === 'guru' || state.teacherModeEnabled === true;
+    }
+
+    function switchView(target) {
+      if (target === 'teacher' && !isTeacherAccessAllowed()) {
+        showToast("Aksés Portal Guru ngan tiasa dibuka ku Guru.", "error");
+        return;
+      }
+      if (state.examActive && target === 'teacher') {
+        showToast("Teu tiasa muka Portal Guru nalika ujian nuju lumangsung!", "error");
+        return;
+      }
+
+      document.getElementById('viewLobby').classList.add('hidden');
+      document.getElementById('viewExam').classList.add('hidden');
+      document.getElementById('viewResult').classList.add('hidden');
+      document.getElementById('viewTeacher').classList.add('hidden');
+
+      const navStudent = document.getElementById('navStudent');
+      const navTeacher = document.getElementById('navTeacher');
+
+      if (target === 'student') {
+        navStudent.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white text-sunda-primary shadow-sm cursor-pointer";
+        navTeacher.className = `${isTeacherAccessAllowed() ? '' : 'hidden '}px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-emerald-100 hover:text-white cursor-pointer`;
+        if (state.examActive) {
+          document.getElementById('viewExam').classList.remove('hidden');
+        } else {
+          document.getElementById('viewLobby').classList.remove('hidden');
+        }
+      } else if (target === 'teacher') {
+        navTeacher.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white text-sunda-primary shadow-sm cursor-pointer";
+        navStudent.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-emerald-100 hover:text-white cursor-pointer";
+        document.getElementById('viewTeacher').classList.remove('hidden');
+        if (state.teacherUnlocked) {
+          document.getElementById('teacherLoginGate').classList.add('hidden');
+          document.getElementById('teacherDashboard').classList.remove('hidden');
+          refreshTokenDisplays();
+          loadRecapData();
+          pollLiveMonitorSources();
+        } else {
+          document.getElementById('teacherLoginGate').classList.remove('hidden');
+          document.getElementById('teacherDashboard').classList.add('hidden');
+        }
+      }
+    }
+
+    function resetToHome() {
+      state.examActive = false;
+      state.terminatedByCheat = false;
+      state.examSubmitted = false;
+      document.getElementById('inputNama').value = '';
+      document.getElementById('inputKelas').value = '';
+      document.getElementById('inputAbsen').value = '';
+      const tokInp = document.getElementById('inputToken');
+      if (tokInp) tokInp.value = '';
+      document.getElementById('loginErrorBox').classList.add('hidden');
+      switchView('student');
+    }
+
+    // =========================================================================
+    // 5. START EXAM & QUESTION SET BUILDER (60 SOAL)
+    // =========================================================================
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function prepareQuestionInstance(q) {
+      const clone = JSON.parse(JSON.stringify(q));
+      if (clone.type === 'dragdrop') {
+        clone.shuffledItems = shuffleArray(clone.items);
+      } else if (clone.type === 'matching') {
+        const rights = clone.pairs.map((p, idx) => ({ origIdx: idx, text: p.right }));
+        clone.shuffledRights = shuffleArray(rights);
+      }
+      return clone;
+    }
+
+    function buildQuestionSet() {
+      return FULL_QUESTION_BANK.map(q => prepareQuestionInstance(q));
+    }
+
+    window.startExam = async function() {
+      try {
+        const namaInput = document.getElementById('inputNama');
+        const kelasInput = document.getElementById('inputKelas');
+        const absenInput = document.getElementById('inputAbsen');
+        const tokenInput = document.getElementById('inputToken');
+        const errBox = document.getElementById('loginErrorBox');
+
+        const nama = namaInput.value.trim();
+        const kelas = kelasInput.value.trim();
+        const absen = absenInput.value.trim();
+        const tokenVal = tokenInput ? tokenInput.value.trim() : '';
+
+        if (!nama) {
+          errBox.textContent = "⚠️ Punten lebetkeun heula Nami Lengkep anjeun sateuacan ngamimitian ujian.";
+          errBox.classList.remove('hidden');
+          namaInput.focus();
+          return;
+        }
+        if (!kelas) {
+          errBox.textContent = "⚠️ Punten pilih heula Kelas anjeun dina daptar 12 kelas XII.";
+          errBox.classList.remove('hidden');
+          kelasInput.focus();
+          return;
+        }
+        if (!absen) {
+          errBox.textContent = "⚠️ Punten eusian heula Nomer Absén anjeun (conto: 14).";
+          errBox.classList.remove('hidden');
+          absenInput.focus();
+          return;
+        }
+        if (!tokenVal || tokenVal.length !== 6) {
+          errBox.textContent = "🔐 Punten lebetkeun 6 digit Token Ujian ti Guru / Proktor!";
+          errBox.classList.remove('hidden');
+          if (tokenInput) tokenInput.focus();
+          return;
+        }
+        const isTokenValid = await validateStudentToken(tokenVal);
+        if (!isTokenValid) {
+          errBox.textContent = "❌ Kode Token 6 digit lepat atanapi parantos kadaluarsa (robah unggal 60 detik). Mangga parios deui token panganyarna!";
+          errBox.classList.remove('hidden');
+          if (tokenInput) {
+            tokenInput.select();
+            tokenInput.focus();
+          }
+          return;
+        }
+
+        errBox.classList.add('hidden');
+
+        state.sessionId = 'SES-' + Date.now().toString(36).toUpperCase();
+        state.student = { nama, kelas, absen };
+        state.activeQuestions = buildQuestionSet();
+        state.examActive = true;
+        state.terminatedByCheat = false;
+        state.examSubmitted = false;
+        state.currentIndex = 0;
+        state.answers = state.activeQuestions.map(q => (q.type === 'pg' ? null : {}));
+        state.selectedChipId = null;
+        state.selectedLeftIdx = null;
+        state.violations = 0;
+        state.lastViolationTs = Date.now();
+
+        const initials = nama.split(' ').filter(Boolean).map(w => w[0]).join('').substring(0, 2).toUpperCase();
+        document.getElementById('examAvatar').textContent = initials || 'S';
+        document.getElementById('examStudentName').textContent = nama;
+        document.getElementById('examStudentMeta').textContent = `Kelas ${kelas} • Absén ${absen} • ${state.activeQuestions.length} Soal Ujian`;
+        updateAntiCheatUI();
+
+        document.getElementById('viewLobby').classList.add('hidden');
+        document.getElementById('viewResult').classList.add('hidden');
+        document.getElementById('viewTeacher').classList.add('hidden');
+        document.getElementById('viewExam').classList.remove('hidden');
+
+        renderQuestion();
+        renderQuestionGrid();
+        emitStudentHeartbeat('UJIAN');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } catch (err) {
+        console.error("Error starting exam:", err);
+        showToast("Aya gangguan téknis: " + err.message, "error");
+      }
+    };
+
+    // =========================================================================
+    // 5B. LIVE HEARTBEAT EMITTER (UNTUK LIVE MONITOR PROKTOR)
+    // =========================================================================
+    function emitStudentHeartbeat(phase = 'UJIAN', finalScore = null) {
+      if (!state.student.nama) return;
+      let answered = 0;
+      state.activeQuestions.forEach((_, idx) => {
+        if (isQuestionAnswered(idx)) answered++;
+      });
+
+      const payload = {
+        sessionId: state.sessionId,
+        nama: state.student.nama,
+        kelas: state.student.kelas,
+        absen: state.student.absen,
+        currentNo: state.currentIndex + 1,
+        answered: answered,
+        totalQ: state.activeQuestions.length || 60,
+        violations: state.violations,
+        terminatedByCheat: state.terminatedByCheat,
+        phase: phase,
+        finalScore: finalScore,
+        updatedAt: Date.now()
+      };
+
+      try {
+        const liveObj = JSON.parse(localStorage.getItem(STORAGE_KEY_LIVE_SESSIONS) || '{}');
+        liveObj[state.sessionId] = payload;
+        localStorage.setItem(STORAGE_KEY_LIVE_SESSIONS, JSON.stringify(liveObj));
+      } catch (e) {}
+
+      if (liveChannel) {
+        try {
+          liveChannel.postMessage({ type: 'HEARTBEAT', payload });
+        } catch (e) {}
+      }
+    }
+
+    if (liveChannel) {
+      liveChannel.onmessage = (ev) => {
+        if (ev.data && ev.data.type === 'HEARTBEAT' && ev.data.payload) {
+          state.liveSessionsMap[ev.data.payload.sessionId] = ev.data.payload;
+          if (state.teacherUnlocked) renderLiveMonitor();
+        }
+      };
+    }
+
+    // =========================================================================
+    // 6. ANTI-CHEAT DETECTOR (1x, 2x & 3x AUTO-LOCKOUT + AUTO-RECORD SCORE)
+    // =========================================================================
+    function handlePotentialCheat() {
+      if (!state.examActive || state.terminatedByCheat) return;
+      const now = Date.now();
+      if (now - state.lastViolationTs < 1500) return;
+      state.lastViolationTs = now;
+      registerViolation();
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden && state.examActive) {
+        handlePotentialCheat();
+      }
+    });
+
+    window.addEventListener('blur', () => {
+      if (state.examActive) {
+        handlePotentialCheat();
+      }
+    });
+
+    function registerViolation() {
+      if (!state.examActive || state.terminatedByCheat) return;
+      state.violations++;
+      updateAntiCheatUI();
+      const modalTitle = document.getElementById('cheatModalTitle');
+      const modalText = document.getElementById('cheatModalText');
+      const modalBtn = document.getElementById('btnCloseCheatModal');
+
+      if (state.violations === 1) {
+        emitStudentHeartbeat('UJIAN');
+        modalTitle.textContent = "Peringatan Pangawasan! (1 / 3)";
+        modalText.innerHTML = `Anjeun kadeteksi kaluar tina layar ujian (<strong>Pelanggaran ka-1 tina 3</strong>).<br>Upami sakali deui pindah tab (2x), status anjeun bakal dicatet minangka <strong>"Terindikasi Curang"</strong>, sarta upami dugi ka <strong>3 kali</strong> ujian bakal otomatis dihentikeun.`;
+        modalBtn.textContent = "Kahartos, Teraskeun Ujian";
+        document.getElementById('cheatModal').classList.remove('hidden');
+      } else if (state.violations === 2) {
+        emitStudentHeartbeat('UJIAN');
+        modalTitle.textContent = "Peringatan Keras! (2 / 3)";
+        modalText.innerHTML = `Anjeun parantos pindah tab <strong>2 kali</strong>.<br>Status anjeun ayeuna otomatis kacatet: <strong class="text-rose-700">"Terindikasi Curang"</strong>.<br><span class="text-xs font-bold text-rose-600 block mt-1.5">⚠️ PERHATOSAN TERAKHIR: Sakali deui (ka-3x) pindah tab/layar, ujian bakal LANGSUNG DIHENTIKAN, tidak bisa melanjutkan soal selanjutnya, sarta nilai langsung terekam!</span>`;
+        modalBtn.textContent = "Kahartos, Moal Pindah Tab Deui";
+        document.getElementById('cheatModal').classList.remove('hidden');
+      } else if (state.violations >= 3) {
+        state.examActive = false;
+        state.terminatedByCheat = true;
+        closeSubmitModal();
+        submitExam({ terminatedByCheat: true });
+
+        modalTitle.textContent = "⛔ Tidak Bisa Melanjutkan Ujian (3x Curang)";
+        modalText.innerHTML = `Anda <strong>tidak bisa melanjutkan ke soal selanjutnya</strong> karena sudah teridentifikasi melakukan kecurangan <strong>3 kali</strong> (3x pindah tab / keluar dari layar ujian).<br><br>Nilai akhir dari jawaban yang telah Anda isi <strong>telah otomatis direkam</strong> ke sistem.`;
+        modalBtn.textContent = "Lihat Hasil & Rekaman Nilai";
+        document.getElementById('cheatModal').classList.remove('hidden');
+      }
+    }
+
+    function closeCheatModal() {
+      document.getElementById('cheatModal').classList.add('hidden');
+      if (state.terminatedByCheat || state.violations >= 3) {
+        document.getElementById('viewExam').classList.add('hidden');
+        document.getElementById('viewResult').classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    function updateAntiCheatUI() {
+      const badge = document.getElementById('antiCheatBadge');
+      const text = document.getElementById('antiCheatText');
+      if (state.violations === 0) {
+        badge.className = "px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200";
+        text.textContent = "Status: Aman (0/3)";
+      } else if (state.violations === 1) {
+        badge.className = "px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 bg-amber-50 text-amber-800 border border-amber-300";
+        text.textContent = "Peringatan (1/3 Pindah Tab)";
+      } else if (state.violations === 2) {
+        badge.className = "px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 bg-rose-100 text-rose-800 border border-rose-300";
+        text.textContent = "Terindikasi Curang (2/3)";
+      } else {
+        badge.className = "px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 bg-rose-700 text-white border border-rose-800";
+        text.textContent = "Dihentikan Otomatis (3/3 Curang)";
+      }
+    }
+
+    // =========================================================================
+    // 7. RENDERING QUESTIONS (PG, DRAG & DROP, MENJODOHKAN) & NAVIGATION
+    // =========================================================================
+    function isQuestionAnswered(idx) {
+      const q = state.activeQuestions[idx];
+      const ans = state.answers[idx];
+      if (!q || ans === null || ans === undefined) return false;
+      if (q.type === 'pg') {
+        return ans !== null;
+      } else if (q.type === 'dragdrop') {
+        return Object.keys(ans).length === q.items.length;
+      } else if (q.type === 'matching') {
+        return Object.keys(ans).length === q.pairs.length;
+      }
+      return false;
+    }
+
+    function renderQuestion() {
+      const total = state.activeQuestions.length;
+      const q = state.activeQuestions[state.currentIndex];
+      document.getElementById('qNumberBadge').textContent = `Soal No. ${state.currentIndex + 1} / ${total}`;
+      document.getElementById('qCategoryBadge').textContent = `Materi: ${q.category}`;
+
+      const typeLabelMap = {
+        pg: 'Pilihan Ganda',
+        dragdrop: 'Drag & Drop (Séréd / Klik-Tempel)',
+        matching: 'Menjodohkan'
+      };
+      document.getElementById('qTypeBadge').textContent = typeLabelMap[q.type] || 'Soal';
+
+      const diffBadge = document.getElementById('qDiffBadge');
+      diffBadge.textContent = q.difficulty;
+      if (q.difficulty === 'Mudah') {
+        diffBadge.className = "px-2.5 py-1 rounded-lg font-bold text-xs bg-emerald-100 text-emerald-800";
+      } else if (q.difficulty === 'Sedang') {
+        diffBadge.className = "px-2.5 py-1 rounded-lg font-bold text-xs bg-sky-100 text-sky-800";
+      } else {
+        diffBadge.className = "px-2.5 py-1 rounded-lg font-bold text-xs bg-rose-100 text-rose-800";
+      }
+
+      const passageBox = document.getElementById('qPassageBox');
+      if (q.passage) {
+        document.getElementById('qPassageTitle').textContent = q.passageTitle || 'Sempalan Carita Wayang';
+        document.getElementById('qPassageText').innerHTML = q.passage.replace(/\n/g, '<br>');
+        passageBox.classList.remove('hidden');
+      } else {
+        passageBox.classList.add('hidden');
+      }
+
+      document.getElementById('qText').innerHTML = q.text.replace(/\n/g, '<br>');
+
+      const container = document.getElementById('qInteractiveBody');
+      container.innerHTML = '';
+
+      if (q.type === 'pg') {
+        renderPGQuestion(q, container);
+      } else if (q.type === 'dragdrop') {
+        renderDragDropQuestion(q, container);
+      } else if (q.type === 'matching') {
+        renderMatchingQuestion(q, container);
+      }
+
+      document.getElementById('btnPrev').disabled = state.currentIndex === 0;
+      if (state.currentIndex === total - 1) {
+        document.getElementById('btnNext').classList.add('hidden');
+        document.getElementById('btnFinish').classList.remove('hidden');
+      } else {
+        document.getElementById('btnNext').classList.remove('hidden');
+        document.getElementById('btnFinish').classList.add('hidden');
+      }
+    }
+
+    function renderPGQuestion(q, container) {
+      const letters = ['A', 'B', 'C', 'D', 'E'];
+      q.options.forEach((optText, idx) => {
+        const isSelected = state.answers[state.currentIndex] === idx;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => {
+          if (!state.examActive || state.terminatedByCheat) return;
+          state.answers[state.currentIndex] = idx;
+          renderQuestion();
+          renderQuestionGrid();
+          emitStudentHeartbeat('UJIAN');
+        };
+        btn.className = `w-full text-left p-3.5 sm:p-4 rounded-xl border transition-all flex items-start gap-3.5 cursor-pointer ${
+          isSelected
+            ? 'border-sunda-primary bg-sunda-primary/10 ring-2 ring-sunda-primary/25 shadow-2xs'
+            : 'border-stone-200 hover:border-sunda-light hover:bg-stone-50/80'
+        }`;
+
+        btn.innerHTML = `
+          <span class="w-7 h-7 rounded-lg shrink-0 flex items-center justify-center font-bold text-xs sm:text-sm transition-colors ${
+            isSelected ? 'bg-sunda-primary text-white' : 'bg-stone-100 text-slate-700'
+          }">${letters[idx]}</span>
+          <span class="text-sm sm:text-base font-medium text-slate-800 pt-0.5">${optText}</span>
+        `;
+        container.appendChild(btn);
+      });
+    }
+
+    function renderDragDropQuestion(q, container) {
+      const currentMap = state.answers[state.currentIndex] || {};
+      const unplacedItems = q.shuffledItems.filter(it => currentMap[it.id] === undefined);
+
+      const helper = document.createElement('div');
+      helper.className = "text-xs text-slate-600 bg-sunda-sand/80 px-3.5 py-2 rounded-xl border border-stone-200 flex flex-wrap items-center justify-between gap-2";
+      helper.innerHTML = `
+        <span>💡 <strong>Cara ngeusian:</strong> Séréd kartu ka kotak kategori, atanapi <strong>klik kartu</strong> tuluy <strong>klik kotak tujuan</strong>.</span>
+        <button type="button" onclick="resetCurrentDragDrop()" class="text-rose-600 font-bold hover:underline cursor-pointer">Reset Jawaban</button>
+      `;
+      container.appendChild(helper);
+
+      const bankBox = document.createElement('div');
+      bankBox.className = "p-3.5 rounded-xl bg-stone-50 border border-dashed border-stone-300 min-h-[64px] flex flex-wrap gap-2 items-center";
+      if (unplacedItems.length === 0) {
+        bankBox.innerHTML = `<span class="text-xs font-semibold text-emerald-700">✓ Sadaya kartu parantos ditempatkeun kana kotak kategori.</span>`;
+      } else {
+        unplacedItems.forEach(item => {
+          const isPicked = state.selectedChipId === item.id;
+          const chip = document.createElement('div');
+          chip.draggable = true;
+          chip.className = `px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold cursor-grab active:cursor-grabbing transition select-none shadow-2xs ${
+            isPicked
+              ? 'bg-amber-400 text-amber-950 ring-2 ring-amber-600'
+              : 'bg-white text-slate-800 border border-stone-300 hover:border-sunda-primary'
+          }`;
+          chip.textContent = item.label;
+
+          chip.addEventListener('dragstart', e => {
+            e.dataTransfer.setData('text/plain', item.id);
+            state.selectedChipId = item.id;
+          });
+
+          chip.addEventListener('click', () => {
+            if (!state.examActive || state.terminatedByCheat) return;
+            state.selectedChipId = (state.selectedChipId === item.id) ? null : item.id;
+            renderQuestion();
+          });
+
+          bankBox.appendChild(chip);
+        });
+      }
+      container.appendChild(bankBox);
+
+      const zonesGrid = document.createElement('div');
+      zonesGrid.className = `grid grid-cols-1 ${q.zones.length === 3 ? 'md:grid-cols-3' : 'sm:grid-cols-2'} gap-3 pt-1`;
+
+      q.zones.forEach((zoneTitle, zIdx) => {
+        const zoneCard = document.createElement('div');
+        zoneCard.className = `rounded-2xl border-2 border-stone-300 bg-white p-3.5 min-h-[140px] flex flex-col transition-all ${
+          state.selectedChipId ? 'border-dashed border-sunda-primary/70 cursor-pointer hover:bg-sunda-primary/5' : ''
+        }`;
+
+        zoneCard.addEventListener('dragover', e => {
+          e.preventDefault();
+          zoneCard.classList.add('drag-over-zone');
+        });
+        zoneCard.addEventListener('dragleave', () => {
+          zoneCard.classList.remove('drag-over-zone');
+        });
+        zoneCard.addEventListener('drop', e => {
+          e.preventDefault();
+          zoneCard.classList.remove('drag-over-zone');
+          if (!state.examActive || state.terminatedByCheat) return;
+          const itemId = e.dataTransfer.getData('text/plain') || state.selectedChipId;
+          if (itemId) placeDragItem(itemId, zIdx);
+        });
+        zoneCard.addEventListener('click', e => {
+          if (!state.examActive || state.terminatedByCheat) return;
+          if (e.target.closest('button[data-remove]')) return;
+          if (state.selectedChipId) {
+            placeDragItem(state.selectedChipId, zIdx);
+          }
+        });
+
+        const header = document.createElement('div');
+        header.className = "font-extrabold text-xs sm:text-sm text-sunda-primary pb-2 mb-2.5 border-b border-stone-100 flex items-center justify-between";
+        header.innerHTML = `<span>${zoneTitle}</span>`;
+        zoneCard.appendChild(header);
+
+        const placedList = document.createElement('div');
+        placedList.className = "space-y-2 flex-1";
+
+        const itemsInZone = q.shuffledItems.filter(it => currentMap[it.id] === zIdx);
+        if (itemsInZone.length === 0) {
+          placedList.innerHTML = `<div class="text-xs text-slate-400 italic py-4 text-center">Leupaskeun / klik di dieu...</div>`;
+        } else {
+          itemsInZone.forEach(it => {
+            const pill = document.createElement('div');
+            pill.draggable = true;
+            pill.addEventListener('dragstart', e => {
+              e.dataTransfer.setData('text/plain', it.id);
+              state.selectedChipId = it.id;
+            });
+            pill.className = "px-3 py-2 rounded-xl bg-sunda-primary text-white text-xs sm:text-sm font-semibold flex items-center justify-between gap-2 shadow-2xs";
+            pill.innerHTML = `
+              <span>${it.label}</span>
+              <button type="button" data-remove="1" title="Kaluarkeun" class="w-5 h-5 rounded-full bg-white/20 hover:bg-white/35 text-white flex items-center justify-center text-xs font-bold shrink-0 cursor-pointer">&times;</button>
+            `;
+            pill.querySelector('button').onclick = () => removeDragItem(it.id);
+            placedList.appendChild(pill);
+          });
+        }
+
+        zoneCard.appendChild(placedList);
+        zonesGrid.appendChild(zoneCard);
+      });
+
+      container.appendChild(zonesGrid);
+    }
+
+    function placeDragItem(itemId, zoneIdx) {
+      if (!state.examActive || state.terminatedByCheat) return;
+      state.answers[state.currentIndex][itemId] = zoneIdx;
+      state.selectedChipId = null;
+      renderQuestion();
+      renderQuestionGrid();
+      emitStudentHeartbeat('UJIAN');
+    }
+
+    function removeDragItem(itemId) {
+      if (!state.examActive || state.terminatedByCheat) return;
+      delete state.answers[state.currentIndex][itemId];
+      state.selectedChipId = null;
+      renderQuestion();
+      renderQuestionGrid();
+      emitStudentHeartbeat('UJIAN');
+    }
+
+    function resetCurrentDragDrop() {
+      if (!state.examActive || state.terminatedByCheat) return;
+      state.answers[state.currentIndex] = {};
+      state.selectedChipId = null;
+      renderQuestion();
+      renderQuestionGrid();
+      emitStudentHeartbeat('UJIAN');
+    }
+
+    function renderMatchingQuestion(q, container) {
+      const currentMap = state.answers[state.currentIndex] || {};
+      const badgeColors = [
+        'bg-emerald-600 text-white',
+        'bg-amber-600 text-white',
+        'bg-sky-600 text-white',
+        'bg-purple-600 text-white'
+      ];
+
+      const helper = document.createElement('div');
+      helper.className = "text-xs text-slate-600 bg-sunda-sand/80 px-3.5 py-2 rounded-xl border border-stone-200 flex flex-wrap items-center justify-between gap-2";
+      helper.innerHTML = `
+        <span>🔗 <strong>Cara ngeusian:</strong> Klik hiji pernyataan di <strong>kolom kénca</strong>, tuluy klik pasanganana di <strong>kolom katuhu</strong>.</span>
+        <button type="button" onclick="resetCurrentMatching()" class="text-rose-600 font-bold hover:underline cursor-pointer">Reset Pasangan</button>
+      `;
+      container.appendChild(helper);
+
+      const grid = document.createElement('div');
+      grid.className = "grid grid-cols-1 md:grid-cols-2 gap-4 pt-1";
+
+      const leftCol = document.createElement('div');
+      leftCol.className = "space-y-2.5";
+      leftCol.innerHTML = `<div class="text-xs font-extrabold uppercase tracking-wider text-slate-500">1. Istilah / Pernyataan</div>`;
+
+      q.pairs.forEach((pair, lIdx) => {
+        const isSelected = state.selectedLeftIdx === lIdx;
+        const matchedRightOrigIdx = currentMap[lIdx];
+        const hasMatch = matchedRightOrigIdx !== undefined;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => {
+          if (!state.examActive || state.terminatedByCheat) return;
+          state.selectedLeftIdx = (state.selectedLeftIdx === lIdx) ? null : lIdx;
+          renderQuestion();
+        };
+
+        btn.className = `w-full text-left p-3.5 rounded-xl border transition-all flex items-center justify-between gap-2.5 cursor-pointer ${
+          isSelected
+            ? 'border-amber-500 bg-amber-50 ring-2 ring-amber-400/50'
+            : hasMatch
+              ? 'border-sunda-primary bg-sunda-primary/5'
+              : 'border-stone-200 bg-white hover:border-sunda-light'
+        }`;
+
+        btn.innerHTML = `
+          <div class="flex items-center gap-2.5">
+            <span class="w-6 h-6 rounded-lg shrink-0 flex items-center justify-center text-xs font-extrabold ${
+              hasMatch ? badgeColors[lIdx % badgeColors.length] : 'bg-stone-200 text-slate-700'
+            }">${lIdx + 1}</span>
+            <span class="text-xs sm:text-sm font-bold text-slate-800">${pair.left}</span>
+          </div>
+          ${hasMatch ? `<span class="text-[11px] font-bold text-sunda-primary shrink-0">✓ Kapasang</span>` : ''}
+        `;
+        leftCol.appendChild(btn);
+      });
+
+      const rightCol = document.createElement('div');
+      rightCol.className = "space-y-2.5";
+      rightCol.innerHTML = `<div class="text-xs font-extrabold uppercase tracking-wider text-slate-500">2. Pasangan Jawaban</div>`;
+
+      q.shuffledRights.forEach(rObj => {
+        const pairedLeftEntry = Object.entries(currentMap).find(([k, v]) => Number(v) === rObj.origIdx);
+        const pairedLeftIdx = pairedLeftEntry ? Number(pairedLeftEntry[0]) : null;
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => {
+          if (!state.examActive || state.terminatedByCheat) return;
+          if (state.selectedLeftIdx !== null) {
+            Object.keys(currentMap).forEach(k => {
+              if (Number(currentMap[k]) === rObj.origIdx) delete currentMap[k];
+            });
+            currentMap[state.selectedLeftIdx] = rObj.origIdx;
+            state.selectedLeftIdx = null;
+            renderQuestion();
+            renderQuestionGrid();
+            emitStudentHeartbeat('UJIAN');
+          } else if (pairedLeftIdx !== null) {
+            delete currentMap[pairedLeftIdx];
+            renderQuestion();
+            renderQuestionGrid();
+            emitStudentHeartbeat('UJIAN');
+          } else {
+            showToast("Pilih heula pernyataan di kolom kénca (nomer 1-4).", "info");
+          }
+        };
+
+        btn.className = `w-full text-left p-3.5 rounded-xl border transition-all flex items-start justify-between gap-2.5 cursor-pointer ${
+          state.selectedLeftIdx !== null
+            ? 'border-dashed border-sunda-primary hover:bg-sunda-primary/10'
+            : pairedLeftIdx !== null
+              ? 'border-sunda-primary bg-sunda-primary/5'
+              : 'border-stone-200 bg-white hover:bg-stone-50'
+        }`;
+
+        btn.innerHTML = `
+          <span class="text-xs sm:text-sm font-medium text-slate-800 leading-snug">${rObj.text}</span>
+          ${
+            pairedLeftIdx !== null
+              ? `<span class="px-2 py-0.5 rounded-md text-xs font-extrabold shrink-0 ${badgeColors[pairedLeftIdx % badgeColors.length]}">No. ${pairedLeftIdx + 1}</span>`
+              : `<span class="w-5 h-5 rounded-full border border-stone-300 shrink-0 mt-0.5"></span>`
+          }
+        `;
+        rightCol.appendChild(btn);
+      });
+
+      grid.appendChild(leftCol);
+      grid.appendChild(rightCol);
+      container.appendChild(grid);
+    }
+
+    function resetCurrentMatching() {
+      if (!state.examActive || state.terminatedByCheat) return;
+      state.answers[state.currentIndex] = {};
+      state.selectedLeftIdx = null;
+      renderQuestion();
+      renderQuestionGrid();
+      emitStudentHeartbeat('UJIAN');
+    }
+
+    function prevQuestion() {
+      if (!state.examActive || state.terminatedByCheat) return;
+      if (state.currentIndex > 0) {
+        state.currentIndex--;
+        state.selectedChipId = null;
+        state.selectedLeftIdx = null;
+        renderQuestion();
+        renderQuestionGrid();
+        emitStudentHeartbeat('UJIAN');
+      }
+    }
+
+    function nextQuestion() {
+      if (!state.examActive || state.terminatedByCheat) return;
+      if (state.currentIndex < state.activeQuestions.length - 1) {
+        state.currentIndex++;
+        state.selectedChipId = null;
+        state.selectedLeftIdx = null;
+        renderQuestion();
+        renderQuestionGrid();
+        emitStudentHeartbeat('UJIAN');
+      }
+    }
+
+    function jumpToQuestion(idx) {
+      if (!state.examActive || state.terminatedByCheat) return;
+      state.currentIndex = idx;
+      state.selectedChipId = null;
+      state.selectedLeftIdx = null;
+      renderQuestion();
+      renderQuestionGrid();
+      emitStudentHeartbeat('UJIAN');
+    }
+
+    function renderQuestionGrid() {
+      const grid = document.getElementById('questionGrid');
+      grid.innerHTML = '';
+      let answeredCount = 0;
+
+      state.activeQuestions.forEach((_, idx) => {
+        const isAnswered = isQuestionAnswered(idx);
+        const isCurrent = idx === state.currentIndex;
+        if (isAnswered) answeredCount++;
+
+        let styleClass = "bg-stone-100 text-slate-700 border border-stone-300 hover:bg-stone-200";
+        if (isAnswered) {
+          styleClass = "bg-sunda-primary text-white font-bold border border-sunda-primary";
+        }
+        if (isCurrent) {
+          styleClass += " ring-2 ring-offset-1 ring-slate-800";
+        }
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.onclick = () => jumpToQuestion(idx);
+        btn.className = `h-8 rounded-lg text-xs font-semibold transition flex items-center justify-center cursor-pointer ${styleClass}`;
+        btn.textContent = idx + 1;
+        grid.appendChild(btn);
+      });
+
+      document.getElementById('answeredCountText').textContent = `${answeredCount} / ${state.activeQuestions.length} Kaéusi`;
+    }
+
+    // =========================================================================
+    // 8. SUBMIT EXAM, GRADING ENGINE & SYNC TO GOOGLE APPS SCRIPT
+    // =========================================================================
+    function openSubmitModal() {
+      if (!state.examActive || state.terminatedByCheat) return;
+      let unanswered = 0;
+      state.activeQuestions.forEach((_, idx) => {
+        if (!isQuestionAnswered(idx)) unanswered++;
+      });
+      const summaryEl = document.getElementById('submitModalSummary');
+      if (unanswered > 0) {
+        summaryEl.innerHTML = `Aya kénéh <strong class="text-rose-600">${unanswered} soal</strong> anu teu acan réngsé dijawab. Yakin badé ngumpulkeun jawaban ayeuna?`;
+      } else {
+        summaryEl.textContent = `Sadaya ${state.activeQuestions.length} soal parantos dijawab. Yakin badé ngumpulkeun jawaban ayeuna?`;
+      }
+      document.getElementById('submitModal').classList.remove('hidden');
+    }
+
+    function closeSubmitModal() {
+      document.getElementById('submitModal').classList.add('hidden');
+    }
+
+    function evaluateSingleQuestion(q, ans) {
+      if (!q || ans === null || ans === undefined) return false;
+      if (q.type === 'pg') {
+        return ans === q.answer;
+      } else if (q.type === 'dragdrop') {
+        if (Object.keys(ans).length !== q.items.length) return false;
+        return q.items.every(it => ans[it.id] === it.targetZone);
+      } else if (q.type === 'matching') {
+        if (Object.keys(ans).length !== q.pairs.length) return false;
+        return q.pairs.every((_, lIdx) => Number(ans[lIdx]) === lIdx);
+      }
+      return false;
+    }
+
+    async function submitExam(options = {}) {
+      if (state.examSubmitted) return;
+      state.examSubmitted = true;
+
+      const terminatedByCheat = Boolean(options && options.terminatedByCheat) || state.terminatedByCheat || state.violations >= 3;
+      closeSubmitModal();
+      state.examActive = false;
+
+      let benar = 0;
+      const catStats = {};
+
+      state.activeQuestions.forEach((q, idx) => {
+        if (!catStats[q.category]) catStats[q.category] = { total: 0, correct: 0 };
+        catStats[q.category].total++;
+
+        const isCorrect = evaluateSingleQuestion(q, state.answers[idx]);
+        if (isCorrect) {
+          benar++;
+          catStats[q.category].correct++;
+        }
+      });
+
+      const totalQ = state.activeQuestions.length;
+      const skor = Math.round((benar / totalQ) * 100);
+      const status = terminatedByCheat
+        ? 'Terindikasi Curang (3x - Dihentikan)'
+        : state.violations >= 2
+          ? 'Terindikasi Curang'
+          : 'Aman';
+
+      emitStudentHeartbeat('SELESAI', skor);
+
+      const payload = {
+        nama: state.student.nama,
+        kelas: state.student.kelas,
+        absen: state.student.absen,
+        skor: skor,
+        benar: benar,
+        status: status
+      };
+
+      const now = new Date();
+      const ts = `${String(now.getDate()).padStart(2, '0')}/${String(now.getMonth() + 1).padStart(2, '0')}/${now.getFullYear()} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
+
+      try {
+        const localList = JSON.parse(localStorage.getItem(STORAGE_KEY_LOCAL_RECAP) || '[]');
+        localList.push([ts, payload.nama, payload.kelas, payload.absen, payload.skor, payload.benar, payload.status]);
+        localStorage.setItem(STORAGE_KEY_LOCAL_RECAP, JSON.stringify(localList));
+      } catch (e) {}
+
+      const terminatedBanner = document.getElementById('cheatTerminatedBanner');
+      const resIcon = document.getElementById('resultHeaderIcon');
+      const resTitle = document.getElementById('resultHeaderTitle');
+      const resSub = document.getElementById('resultHeaderSubtitle');
+
+      if (terminatedByCheat) {
+        if (terminatedBanner) terminatedBanner.classList.remove('hidden');
+        if (resIcon) resIcon.textContent = '⛔';
+        if (resTitle) resTitle.textContent = 'Ujian Dihentikan Otomatis!';
+        if (resSub) resSub.textContent = 'Teridentifikasi melakukan kecurangan 3 kali — Nilai telah otomatis direkam.';
+      } else {
+        if (terminatedBanner) terminatedBanner.classList.add('hidden');
+        if (resIcon) resIcon.textContent = '🎉';
+        if (resTitle) resTitle.textContent = 'Hatur Nuhun!';
+        if (resSub) resSub.textContent = 'Jawaban ASAS 1 Basa Sunda parantos kacatet kana sistem.';
+      }
+
+      document.getElementById('resSkor').textContent = skor;
+      document.getElementById('resBenar').textContent = `Leres ${benar} tina ${totalQ} soal`;
+      document.getElementById('resNama').textContent = payload.nama;
+      document.getElementById('resKelasAbsen').textContent = `${payload.kelas} / Absén ${payload.absen}`;
+      document.getElementById('resTime').textContent = ts;
+
+      const resStatusEl = document.getElementById('resStatus');
+      resStatusEl.textContent = status;
+      if (status.toLowerCase().includes('curang')) {
+        resStatusEl.className = "font-bold px-2.5 py-0.5 rounded-md text-xs bg-rose-100 text-rose-800";
+      } else {
+        resStatusEl.className = "font-bold px-2.5 py-0.5 rounded-md text-xs bg-emerald-100 text-emerald-800";
+      }
+
+      const breakdownEl = document.getElementById('categoryBreakdown');
+      breakdownEl.innerHTML = Object.entries(catStats).map(([cat, st]) => {
+        const pct = Math.round((st.correct / st.total) * 100);
+        return `
+          <div class="p-3 rounded-xl bg-stone-50 border border-stone-200/80">
+            <div class="text-xs font-bold text-slate-700 truncate">${cat}</div>
+            <div class="text-lg font-extrabold text-sunda-primary mt-0.5">${st.correct} / ${st.total} <span class="text-xs font-semibold text-slate-500">(${pct}%)</span></div>
+          </div>
+        `;
+      }).join('');
+
+      buildReviewList();
+      document.getElementById('reviewContainer').classList.add('hidden');
+      document.getElementById('btnToggleReview').textContent = 'Tingali Kunci & Pembahasan';
+
+      document.getElementById('viewExam').classList.add('hidden');
+      document.getElementById('viewResult').classList.remove('hidden');
+      if (!terminatedByCheat) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      const syncBox = document.getElementById('syncStatusBox');
+      if (state.gasUrl) {
+        syncBox.className = "p-3 rounded-xl text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200";
+        syncBox.textContent = "Nuju ngintunkeun data ka Google Sheets...";
+        try {
+          await fetch(state.gasUrl, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+          syncBox.className = "p-3 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200";
+          syncBox.textContent = "✓ Berhasil kakintun ka Google Sheets (Rekap SAS)!";
+        } catch (err) {
+          syncBox.className = "p-3 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200";
+          syncBox.textContent = "Gagal nyambung ka server Google, data disimpen sacara lokal.";
+        }
+      } else {
+        syncBox.className = "p-3 rounded-xl text-xs font-semibold bg-stone-100 text-slate-700 border border-stone-200";
+        syncBox.textContent = "Hasil ujian parantos disimpen kana rékaman lokal browser.";
+      }
+    }
+
+    function toggleReviewAnswers() {
+      const box = document.getElementById('reviewContainer');
+      const btn = document.getElementById('btnToggleReview');
+      if (box.classList.contains('hidden')) {
+        box.classList.remove('hidden');
+        btn.textContent = 'Tutup Pembahasan';
+        box.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        box.classList.add('hidden');
+        btn.textContent = 'Tingali Kunci & Pembahasan';
+      }
+    }
+
+    function buildReviewList() {
+      const list = document.getElementById('reviewList');
+      const letters = ['A', 'B', 'C', 'D', 'E'];
+
+      list.innerHTML = state.activeQuestions.map((q, idx) => {
+        const isCorrect = evaluateSingleQuestion(q, state.answers[idx]);
+        let keySummary = '';
+
+        if (q.type === 'pg') {
+          keySummary = `Kunci Jawaban: <strong>${letters[q.answer]}. ${q.options[q.answer]}</strong>`;
+        } else if (q.type === 'dragdrop') {
+          keySummary = q.zones.map((zName, zIdx) => {
+            const members = q.items.filter(it => it.targetZone === zIdx).map(it => it.label).join(', ');
+            return `<div>• <strong>${zName}:</strong> ${members}</div>`;
+          }).join('');
+        } else if (q.type === 'matching') {
+          keySummary = q.pairs.map(p => `<div>• <strong>${p.left}</strong> → ${p.right}</div>`).join('');
+        }
+
+        return `
+          <div class="p-4 rounded-xl border ${isCorrect ? 'border-emerald-200 bg-emerald-50/40' : 'border-rose-200 bg-rose-50/40'} space-y-2">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs font-extrabold text-slate-700">No. ${idx + 1} • ${q.category} (${q.difficulty})</span>
+              <span class="px-2 py-0.5 rounded text-xs font-bold ${isCorrect ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white'}">
+                ${isCorrect ? '✓ Leres' : '✕ Lepat'}
+              </span>
+            </div>
+            ${q.passage ? `<div class="text-xs italic text-amber-950 bg-amber-50/90 border-l-2 border-amber-500 p-2.5 rounded-r-lg"><strong>${q.passageTitle || 'Sempalan'}:</strong> "${q.passage}"</div>` : ''}
+            <div class="text-sm font-semibold text-slate-800">${q.text.replace(/\n/g, '<br>')}</div>
+            <div class="text-xs text-sunda-dark bg-white/80 p-2.5 rounded-lg border border-stone-200/80 space-y-1">
+              ${keySummary}
+            </div>
+            <div class="text-xs text-slate-600 italic"><strong>Pedaran:</strong> ${q.explanation}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // =========================================================================
+    // 9. PORTAL GURU (REKAP NILAI, FILTER 12 KELAS, CSV & LIVE MONITOR)
+    // =========================================================================
+    function toggleTeacherPassVisibility() {
+      const inp = document.getElementById('teacherPassInput');
+      inp.type = inp.type === 'password' ? 'text' : 'password';
+    }
+
+    function lockTeacherDashboard() {
+      state.teacherUnlocked = false;
+      state.teacherPass = '';
+      document.getElementById('teacherPassInput').value = '';
+      document.getElementById('teacherGateError').classList.add('hidden');
+      document.getElementById('teacherDashboard').classList.add('hidden');
+      document.getElementById('teacherLoginGate').classList.remove('hidden');
+      showToast("Portal Guru dikonci.", "info");
+    }
+
+    function switchTeacherSubTab(sub) {
+      state.teacherSubTab = sub;
+      const btnRekap = document.getElementById('subTabRekap');
+      const btnMon = document.getElementById('subTabMonitor');
+      const panelRekap = document.getElementById('panelTeacherRekap');
+      const panelMon = document.getElementById('panelTeacherMonitor');
+
+      if (sub === 'rekap') {
+        btnRekap.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-sunda-primary text-white shadow-2xs transition cursor-pointer";
+        btnMon.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-stone-100 text-slate-700 hover:bg-stone-200 transition flex items-center gap-2 cursor-pointer";
+        panelRekap.classList.remove('hidden');
+        panelMon.classList.add('hidden');
+        loadRecapData();
+      } else {
+        btnMon.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-sunda-primary text-white shadow-2xs transition flex items-center gap-2 cursor-pointer";
+        btnRekap.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-stone-100 text-slate-700 hover:bg-stone-200 transition cursor-pointer";
+        panelRekap.classList.add('hidden');
+        panelMon.classList.remove('hidden');
+        pollLiveMonitorSources();
+      }
+    }
+
+    function setRecapSourceMode(mode) {
+      state.recapSourceMode = mode;
+      const tabs = {
+        auto: document.getElementById('srcTabAuto'),
+        sheets: document.getElementById('srcTabSheets'),
+        local: document.getElementById('srcTabLocal')
+      };
+      Object.entries(tabs).forEach(([key, el]) => {
+        if (!el) return;
+        if (key === mode) {
+          el.className = "px-3 py-1.5 rounded-xl text-xs font-bold bg-sunda-primary text-white shadow-2xs transition cursor-pointer";
+        } else {
+          el.className = "px-3 py-1.5 rounded-xl text-xs font-bold bg-stone-100 text-slate-700 hover:bg-stone-200 transition cursor-pointer";
+        }
+      });
+      updateConnectionIndicator();
+      loadRecapData();
+    }
+
+    async function unlockTeacherDashboard() {
+      const passInput = document.getElementById('teacherPassInput');
+      const gateErr = document.getElementById('teacherGateError');
+      const btn = document.getElementById('btnUnlockTeacher');
+      const pass = passInput.value.trim();
+
+      if (!pass) {
+        gateErr.textContent = "⚠️ Mangga lebetkeun heula password guru!";
+        gateErr.classList.remove('hidden');
+        passInput.focus();
+        return;
+      }
+
+      gateErr.classList.add('hidden');
+
+      if (state.gasUrl) {
+        btn.disabled = true;
+        btn.innerHTML = `<span>⏳ Mariksa password ka Google Sheets...</span>`;
+        try {
+          const url = `${state.gasUrl}?action=rekap&pass=${encodeURIComponent(pass)}`;
+          const res = await fetch(url);
+          const json = await res.json();
+          if (json && json.ok && Array.isArray(json.rows)) {
+            state.teacherPass = pass;
+            state.teacherUnlocked = true;
+            state.recapRows = json.rows.slice(1);
+            document.getElementById('teacherLoginGate').classList.add('hidden');
+            document.getElementById('teacherDashboard').classList.remove('hidden');
+            refreshTokenDisplays();
+            updateConnectionIndicator();
+            updateStatsAndTable();
+            pollLiveMonitorSources();
+            showToast("Password leres! Data Google Sheets parantos dimuat.", "success");
+            return;
+          } else {
+            gateErr.textContent = `❌ ${json.msg || "Password guru salah! Pariksa deui PASSWORD_GURU dina Apps Script."}`;
+            gateErr.classList.remove('hidden');
+            return;
+          }
+        } catch (err) {
+          if (pass !== 'sunda2026') {
+            gateErr.textContent = "❌ Gagal nyambung ka Google Sheets sareng password lokal teu cocog (default: sunda2026).";
+            gateErr.classList.remove('hidden');
+            return;
+          }
+          showToast("Server Google teu kahontal, muka rékaman lokal browser.", "warning");
+        } finally {
+          btn.disabled = false;
+          btn.innerHTML = `<span>🔓 Buka Portal Rékap &amp; Proktor</span>`;
+        }
+      } else {
+        if (pass !== 'sunda2026') {
+          gateErr.textContent = "❌ Password guru salah! Kanggo Penyimpanan Lokal, gunakeun password: sunda2026";
+          gateErr.classList.remove('hidden');
+          passInput.focus();
+          return;
+        }
+      }
+
+      state.teacherPass = pass;
+      state.teacherUnlocked = true;
+      document.getElementById('teacherLoginGate').classList.add('hidden');
+      document.getElementById('teacherDashboard').classList.remove('hidden');
+      refreshTokenDisplays();
+      updateConnectionIndicator();
+      loadRecapData();
+      pollLiveMonitorSources();
+    }
+
+    async function loadRecapData() {
+      const tbody = document.getElementById('recapTableBody');
+      tbody.innerHTML = `<tr><td colspan="7" class="py-8 text-center text-slate-500 text-sm">Nuju ngamuat data rékap...</td></tr>`;
+      updateConnectionIndicator();
+
+      const useSheets = (state.recapSourceMode === 'sheets') || (state.recapSourceMode === 'auto' && Boolean(state.gasUrl));
+
+      if (useSheets) {
+        if (!state.gasUrl) {
+          state.recapRows = [];
+          updateStatsAndTable();
+          showToast("URL Google Apps Script teu acan disetél. Klik tombol ⚙️ URL Google Sheet.", "warning");
+          return;
+        }
+        try {
+          const url = `${state.gasUrl}?action=rekap&pass=${encodeURIComponent(state.teacherPass)}`;
+          const res = await fetch(url);
+          const json = await res.json();
+          if (json && json.ok && Array.isArray(json.rows)) {
+            state.recapRows = json.rows.slice(1);
+            updateStatsAndTable();
+            showToast(`Berhasil ngamuat ${state.recapRows.length} data ti Google Sheets.`, "success");
+            return;
+          } else {
+            showToast(json.msg || "Password guru salah atanapi gagal maca Sheets.", "error");
+            lockTeacherDashboard();
+            return;
+          }
+        } catch (err) {
+          if (state.recapSourceMode === 'sheets') {
+            state.recapRows = [];
+            updateStatsAndTable();
+            showToast("Gagal nyambung ka Google Sheets. Pastikeun deployment disetél 'Anyone'.", "error");
+            return;
+          }
+          showToast("Gagal nyambung ka Google Sheets, nampilkeun rékaman lokal.", "warning");
+        }
+      }
+
+      state.recapRows = JSON.parse(localStorage.getItem(STORAGE_KEY_LOCAL_RECAP) || '[]');
+      updateStatsAndTable();
+    }
+
+    async function syncLocalRecordsToSheets() {
+      if (!state.gasUrl) {
+        showToast("Setél heula URL Google Apps Script di ikon ⚙️.", "warning");
+        return;
+      }
+      const localList = JSON.parse(localStorage.getItem(STORAGE_KEY_LOCAL_RECAP) || '[]');
+      if (localList.length === 0) {
+        showToast("Teu aya rékaman lokal anu perlu dikirim.", "info");
+        return;
+      }
+      const btn = document.getElementById('btnSyncLocalToSheet');
+      btn.disabled = true;
+      btn.textContent = "⏳ Nuju ngintun...";
+      try {
+        for (const r of localList) {
+          const payload = {
+            nama: r[1],
+            kelas: r[2],
+            absen: r[3],
+            skor: Number(r[4]) || 0,
+            benar: Number(r[5]) || 0,
+            status: r[6] || 'Aman'
+          };
+          await fetch(state.gasUrl, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+        }
+        showToast(`${localList.length} rékaman lokal parantos dikirim ka Google Sheets!`, "success");
+        setTimeout(() => loadRecapData(), 1200);
+      } catch (err) {
+        showToast("Gagal ngintun rékaman lokal ka Google Sheets.", "error");
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "☁️ Kirim Rékaman Lokal ka Google Sheet";
+      }
+    }
+
+    function updateStatsAndTable() {
+      const rows = state.recapRows;
+      const total = rows.length;
+      let sum = 0;
+      let max = 0;
+      let cheatCount = 0;
+
+      rows.forEach(r => {
+        const skor = Number(r[4]) || 0;
+        sum += skor;
+        if (skor > max) max = skor;
+        if (String(r[6]).toLowerCase().includes('curang')) cheatCount++;
+      });
+
+      document.getElementById('statTotal').textContent = total;
+      document.getElementById('statAvg').textContent = total > 0 ? Math.round(sum / total) : 0;
+      document.getElementById('statMax').textContent = max;
+      document.getElementById('statCheat').textContent = cheatCount;
+
+      const kelasSelect = document.getElementById('filterKelasSelect');
+      if (kelasSelect) {
+        const prevVal = kelasSelect.value;
+        const extraClasses = rows
+          .map(r => String(r[2] || '').trim())
+          .filter(c => c && !OFFICIAL_CLASSES.includes(c))
+          .sort();
+        const allClasses = [...OFFICIAL_CLASSES, ...Array.from(new Set(extraClasses))];
+        kelasSelect.innerHTML = `<option value="ALL">Sadaya Kelas (${allClasses.length} Kelas)</option>` +
+          allClasses.map(k => `<option value="${k.replace(/"/g, '&quot;')}">${k}</option>`).join('');
+        if (prevVal === 'ALL' || allClasses.includes(prevVal)) {
+          kelasSelect.value = prevVal;
+        }
+      }
+
+      renderRecapTable();
+    }
+
+    function getFilteredRecapRows() {
+      const query = document.getElementById('searchRecapInput').value.toLowerCase();
+      const kelasFilter = document.getElementById('filterKelasSelect').value;
+      const statusFilter = document.getElementById('filterStatusSelect').value;
+
+      return state.recapRows.filter(r => {
+        const nama = String(r[1] || '').toLowerCase();
+        const kelas = String(r[2] || '').trim();
+        const absen = String(r[3] || '').toLowerCase();
+        const status = String(r[6] || 'Aman');
+        const matchesQuery = nama.includes(query) || kelas.toLowerCase().includes(query) || absen.includes(query);
+        const matchesKelas = kelasFilter === 'ALL' || kelas === kelasFilter;
+        const matchesStatus = statusFilter === 'ALL'
+          || (statusFilter === 'Terindikasi Curang' && status.toLowerCase().includes('curang'))
+          || status === statusFilter;
+        return matchesQuery && matchesKelas && matchesStatus;
+      });
+    }
+
+    function renderRecapTable() {
+      const tbody = document.getElementById('recapTableBody');
+      const filtered = getFilteredRecapRows();
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" class="py-8 text-center text-slate-400 text-sm">Teu aya data rékap siswa anu kapendak dina kelas/filter ieu.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = filtered.map(r => {
+        const isCheat = String(r[6]).toLowerCase().includes('curang');
+        const rowBg = isCheat ? 'style="background-color: #fbe3e1;"' : 'class="hover:bg-stone-50"';
+        const badgeClass = isCheat
+          ? 'bg-rose-600 text-white'
+          : 'bg-emerald-100 text-emerald-800';
+
+        return `
+          <tr ${rowBg}>
+            <td class="py-3 px-4 text-xs text-slate-600 whitespace-nowrap">${r[0] || '-'}</td>
+            <td class="py-3 px-4 font-bold text-slate-800">${r[1] || '-'}</td>
+            <td class="py-3 px-4 font-semibold text-slate-700">${r[2] || '-'}</td>
+            <td class="py-3 px-4 text-slate-700">${r[3] || '-'}</td>
+            <td class="py-3 px-4 font-extrabold text-sunda-primary">${r[4] ?? 0}</td>
+            <td class="py-3 px-4 text-slate-700">${r[5] ?? 0} / 60</td>
+            <td class="py-3 px-4">
+              <span class="px-2.5 py-1 rounded-full text-xs font-bold whitespace-nowrap ${badgeClass}">
+                ${r[6] || 'Aman'}
+              </span>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function exportToCSV() {
+      const rowsToExport = getFilteredRecapRows();
+      if (rowsToExport.length === 0) {
+        showToast("Teu aya data anu tiasa diunduh.", "warning");
+        return;
+      }
+
+      const headers = ['Timestamp', 'Nama Siswa', 'Kelas', 'No. Absen', 'Skor Akhir', 'Jumlah Benar', 'Status Pelanggaran'];
+      const csvLines = [headers.join(',')];
+      rowsToExport.forEach(r => {
+        const escaped = r.map(val => `"${String(val ?? '').replace(/"/g, '""')}"`);
+        csvLines.push(escaped.join(','));
+      });
+
+      const bom = '\uFEFF';
+      const blob = new Blob([bom + csvLines.join('\n')], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      const kelasTag = document.getElementById('filterKelasSelect').value.replace(/\s+/g, '_');
+      link.href = URL.createObjectURL(blob);
+      link.download = `Rekap_ASAS1_Basa_Sunda_${kelasTag}_${new Date().toISOString().slice(0, 10)}.csv`;
+      link.click();
+      showToast(`Berhasil ngunduh ${rowsToExport.length} data siswa kana file CSV.`, "success");
+    }
+
+    // --- 9B. LIVE MONITOR PROKTOR ENGINE ---
+    async function pollLiveMonitorSources() {
+      if (!state.teacherUnlocked) return;
+      try {
+        const localObj = JSON.parse(localStorage.getItem(STORAGE_KEY_LIVE_SESSIONS) || '{}');
+        Object.values(localObj).forEach(item => {
+          const prev = state.liveSessionsMap[item.sessionId];
+          if (!prev || (item.updatedAt || 0) >= (prev.updatedAt || 0)) {
+            state.liveSessionsMap[item.sessionId] = item;
+          }
+        });
+      } catch (e) {}
+
+      if (state.gasUrl) {
+        try {
+          const res = await fetch(`${state.gasUrl}?action=live&pass=${encodeURIComponent(state.teacherPass)}`);
+          const json = await res.json();
+          if (json && json.ok && Array.isArray(json.sessions)) {
+            json.sessions.forEach(item => {
+              const prev = state.liveSessionsMap[item.sessionId];
+              if (!prev || (item.updatedAt || 0) >= (prev.updatedAt || 0)) {
+                state.liveSessionsMap[item.sessionId] = item;
+              }
+            });
+          }
+        } catch (err) {}
+      }
+
+      renderLiveMonitor();
+    }
+
+    function clearLiveMonitorSessions() {
+      localStorage.removeItem(STORAGE_KEY_LIVE_SESSIONS);
+      state.liveSessionsMap = {};
+      renderLiveMonitor();
+      showToast("Log sési live monitor parantos dibersihkeun.", "info");
+    }
+
+    function renderLiveMonitor() {
+      const allList = Object.values(state.liveSessionsMap).sort((a, b) => (b.updatedAt || 0) - (a.updatedAt || 0));
+      const activeCount = allList.filter(s => s.phase !== 'SELESAI').length;
+      const badgeEl = document.getElementById('liveActiveBadge');
+      if (badgeEl) badgeEl.textContent = `${activeCount} Aktif`;
+
+      const q = (document.getElementById('filterMonitorSearch')?.value || '').toLowerCase();
+      const kelasF = document.getElementById('filterKelasMonitor')?.value || 'ALL';
+      const phaseF = document.getElementById('filterMonitorPhase')?.value || 'ALL';
+
+      const filtered = allList.filter(s => {
+        const matchText = String(s.nama || '').toLowerCase().includes(q) || String(s.kelas || '').toLowerCase().includes(q);
+        const matchKelas = kelasF === 'ALL' || String(s.kelas || '').trim() === kelasF;
+        const matchPhase = phaseF === 'ALL' || s.phase === phaseF;
+        return matchText && matchKelas && matchPhase;
+      });
+
+      const grid = document.getElementById('liveMonitorGrid');
+      if (!grid) return;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full bg-white rounded-2xl border border-dashed border-stone-300 p-10 text-center space-y-2">
+            <div class="text-3xl">📡</div>
+            <div class="font-bold text-slate-700">Teu acan aya sési siswa aktif dina filter ieu</div>
+            <p class="text-xs text-slate-500 max-w-md mx-auto">
+              Buka tab anyar sareng lebet kana <strong>Ruang Siswa</strong> pikeun ngamimitian ujian. Progres siswa bakal langsung katingali sacara real-time di dieu.
+            </p>
+          </div>
+        `;
+        return;
+      }
+
+      const now = Date.now();
+      grid.innerHTML = filtered.map(s => {
+        const pct = Math.min(100, Math.round(((s.answered || 0) / (s.totalQ || 60)) * 100));
+        const isLockedCheat = s.terminatedByCheat || (s.violations || 0) >= 3;
+        const isCheat = (s.violations || 0) >= 2;
+        const isWarn = (s.violations || 0) === 1;
+        const secAgo = Math.max(0, Math.round((now - (s.updatedAt || now)) / 1000));
+        const isOffline = s.phase !== 'SELESAI' && secAgo > 20;
+
+        const cardBorder = isCheat
+          ? 'border-rose-400 bg-rose-50/40'
+          : isWarn
+            ? 'border-amber-400 bg-amber-50/30'
+            : 'border-stone-200 bg-white';
+
+        const statusBadge = isLockedCheat
+          ? '<span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-rose-700 text-white">Dihentikan (3x Curang)</span>'
+          : isCheat
+            ? `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-rose-600 text-white">Curang (${s.violations}/3)</span>`
+            : isWarn
+              ? '<span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-amber-500 text-slate-950">Peringatan (1/3)</span>'
+              : '<span class="px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-emerald-100 text-emerald-800">Aman</span>';
+
+        const phaseBadge = s.phase === 'SELESAI'
+          ? `<span class="px-2 py-0.5 rounded-md text-[11px] font-bold ${isLockedCheat ? 'bg-rose-100 text-rose-800' : 'bg-sky-100 text-sky-800'}">${isLockedCheat ? '⛔ Dihentikan' : '✓ Rengsé'} (Skor: ${s.finalScore ?? '-'})</span>`
+          : isOffline
+            ? `<span class="px-2 py-0.5 rounded-md text-[11px] font-bold bg-stone-200 text-slate-600">⏸️ Teu Aktif (${secAgo}d)</span>`
+            : `<span class="px-2 py-0.5 rounded-md text-[11px] font-bold bg-emerald-600 text-white animate-pulse">● Soal No. ${s.currentNo}</span>`;
+
+        return `
+          <div class="rounded-2xl border-2 ${cardBorder} p-4 shadow-2xs space-y-3 transition-all">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="font-extrabold text-slate-800 text-sm sm:text-base leading-tight">${s.nama || 'Siswa'}</div>
+                <div class="text-xs text-slate-500 font-semibold mt-0.5">Kelas ${s.kelas || '-'} • Absén ${s.absen || '-'}</div>
+              </div>
+              ${phaseBadge}
+            </div>
+
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs font-semibold text-slate-600">
+                <span>Progres Jawaban</span>
+                <span>${s.answered || 0} / ${s.totalQ || 60} Soal (${pct}%)</span>
+              </div>
+              <div class="w-full h-2.5 rounded-full bg-stone-200 overflow-hidden">
+                <div class="h-full bg-sunda-primary rounded-full transition-all duration-300" style="width: ${pct}%"></div>
+              </div>
+            </div>
+
+            <div class="pt-2 border-t border-stone-200/70 flex items-center justify-between gap-2">
+              ${statusBadge}
+              <span class="text-[10px] font-mono text-slate-400">Update ${secAgo}d lalu</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // =========================================================================
+    // 10. SETUP MODAL (GOOGLE APPS SCRIPT URL) & TOAST HELPER
+    // =========================================================================
+    function openSetupModal() {
+      document.getElementById('gasUrlInput').value = state.gasUrl;
+      document.getElementById('pingResultBox').classList.add('hidden');
+      document.getElementById('setupModal').classList.remove('hidden');
+    }
+
+    function closeSetupModal() {
+      document.getElementById('setupModal').classList.add('hidden');
+    }
+
+    function saveGasUrl() {
+      const val = document.getElementById('gasUrlInput').value.trim();
+      state.gasUrl = val;
+      localStorage.setItem(STORAGE_KEY_URL, val);
+      updateConnectionIndicator();
+      closeSetupModal();
+      showToast(val ? "URL Google Apps Script disimpen!" : "Diubah ka Penyimpanan Lokal.", "success");
+      if (state.teacherUnlocked) loadRecapData();
+    }
+
+    async function testGasConnection() {
+      const url = document.getElementById('gasUrlInput').value.trim();
+      const box = document.getElementById('pingResultBox');
+      box.classList.remove('hidden');
+
+      if (!url) {
+        box.className = "p-3 rounded-xl text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200";
+        box.textContent = "Lebetkeun heula Web App URL di luhur.";
+        return;
+      }
+
+      box.className = "p-3 rounded-xl text-xs font-semibold bg-stone-100 text-slate-700";
+      box.textContent = "Nuju nguji koneksi ka server Apps Script...";
+
+      try {
+        const res = await fetch(url);
+        const json = await res.json();
+        if (json && json.ok) {
+          box.className = "p-3 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200";
+          box.textContent = `✓ Sukses! Respon server: "${json.msg}"`;
+        } else {
+          box.className = "p-3 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200";
+          box.textContent = "Server ngaréspon tapi formatna teu saluyu.";
+        }
+      } catch (err) {
+        box.className = "p-3 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200";
+        box.textContent = "Gagal nyambung. Pastikeun deployment disetél 'Who has access: Anyone'.";
+      }
+    }
+
+    function clearLocalDemoData() {
+      localStorage.removeItem(STORAGE_KEY_LOCAL_RECAP);
+      showToast("Rékaman lokal parantos dihapus.", "success");
+      if (state.teacherUnlocked && !state.gasUrl) {
+        state.recapRows = [];
+        updateStatsAndTable();
+      }
+    }
+
+    function showToast(msg, type = 'info') {
+      const box = document.getElementById('toastBox');
+      const el = document.createElement('div');
+      const colors = {
+        success: 'bg-emerald-800 text-white border-emerald-600',
+        error: 'bg-rose-700 text-white border-rose-500',
+        warning: 'bg-amber-600 text-white border-amber-400',
+        info: 'bg-slate-800 text-white border-slate-600'
+      };
+      el.className = `px-4 py-3 rounded-xl shadow-lg border text-xs sm:text-sm font-semibold transition-all ${colors[type] || colors.info}`;
+      el.textContent = msg;
+      box.appendChild(el);
+      setTimeout(() => {
+        el.style.opacity = '0';
+        setTimeout(() => el.remove(), 300);
+      }, 3200);
+    }
+  </script>
+</body>
+</html>
